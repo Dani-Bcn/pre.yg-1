@@ -28,7 +28,7 @@ export default function Navbar(props) {
       });
     } else {
       gsap.to("#cnt", {
-        gap: 4,
+        gap: 6,
         ease:"circ.out(1.7)"
       });
       gsap.to("#stick", {
@@ -45,12 +45,12 @@ export default function Navbar(props) {
   }, [openMenu]);
 
   return (
-    <main className="overflow-hidden w-full h-[50px] mt-10 flex justify-between items-center">
+    <main className="  overflow-hidden w-full h-[55px] mt-10 flex justify-between items-center">
       <img src="/img/descarga.png" width={125} alt="img" />
       <section
         id="cnt"
         onClick={() => {setOpenMenu(!openMenu), openMenuResp(setStateMenuResp(!stateMenuResp))}}
-        className="flex flex-col gap-[3px] w-20 h-20 items-center justify-center"
+        className="ml-5 z-50 flex flex-col gap-4 w-20 h-20 items-center justify-center"
       >
         <div id="stick" className="w-6 h-[0.5px] bg-red-600 "></div>
         <div id="stick1" className="w-6 h-[1px] bg-red-600 "></div>

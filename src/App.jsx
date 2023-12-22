@@ -2,6 +2,7 @@ import './App.css'
 import Tienda from './Tienda'
 import Navbar from './Navbar'
 import MenuResponsive from './MenuResponsive'
+import Carousel from './Carousel'
 import { useState } from 'react'
 
 function App() {
@@ -13,17 +14,18 @@ const [stateMenuResp, setStateMenuResp] = useState(false)
   })
 
   return (
-    <main className='w-full h-full flex '>
+    <main className='w-full h-full flex flex-col'>
      <Tienda/>
      <Navbar 
      openMenuResp={openMenuResp}
      stateMenuResp={stateMenuResp}
      setStateMenuResp={setStateMenuResp}
      />
-     <MenuResponsive 
+     <Carousel/>
+    {/*  <MenuResponsive 
       stateMenuResp={stateMenuResp}
       setStateMenuResp={setStateMenuResp}
-     />
+     /> */}
     
     </main>
   )
