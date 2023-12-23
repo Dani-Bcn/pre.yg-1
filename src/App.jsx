@@ -3,6 +3,7 @@ import Tienda from './Tienda'
 import Navbar from './Navbar'
 import MenuResponsive from './MenuResponsive'
 import Carousel from './Carousel'
+import Fresado from './Soluciones/Fresado'
 import { useState } from 'react'
 
 function App() {
@@ -22,10 +23,10 @@ const [stateMenuResp, setStateMenuResp] = useState(false)
      setStateMenuResp={setStateMenuResp}
      />
      <Carousel/>
-    {/*  <MenuResponsive 
+   <MenuResponsive 
       stateMenuResp={stateMenuResp}
       setStateMenuResp={setStateMenuResp}
-     /> */}
+     /> 
     
     </main>
   )
