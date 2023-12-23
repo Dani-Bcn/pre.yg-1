@@ -6,7 +6,7 @@ export default function Tienda() {
       <h3 className="text-white text-[1.1rem] mx-3">Tienda virtual</h3>
       <section className="flex gap-4 h-full items-center">
         <div className="w-[0.1px] h-7 bg-white "></div>
-        <img src="src/assets/carrito.png" alt="" className="mr-5 w-6 h-6" />
+        <img src="/assets/carrito.png" alt="" className="mr-5 w-6 h-6" />
       </section>
     </main>
   );
