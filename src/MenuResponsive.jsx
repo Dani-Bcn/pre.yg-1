@@ -6,16 +6,16 @@ export default function MenuResponsive(props) {
     const {stateMenuResp} = props
    
 stateMenuResp?
-    gsap.to("#main",{
+    gsap.to("#mainMenu",{
         x:"100vw"
     }):
-    gsap.to("#main",{
+    gsap.to("#mainMenu",{
         x:0
     })
 
   return (
-    <main id="main" onClick={()=> setStateMenuResp(false)} className="ml-[-100vw] fixed w-full h-full flex items-center justify-start bg-slate-300/[0.7] backdrop-blur-sm">
-      <ul className=" p-10 gap-10 text-2xl font-semibold flex flex-col w-full ">
+    <main id="mainMenu" onClick={()=> setStateMenuResp(false)} className="ml-[-100vw] fixed w-full h-full flex items-center justify-start bg-red-300/[0.7] backdrop-blur-sm">
+      <ul className=" p-10 gap-10 text-3xl font-bold flex flex-col w-full ">
         <li>
           <p>Inicio</p>
         </li>
