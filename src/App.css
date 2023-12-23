@@ -11,6 +11,11 @@
         clip-path: circle(50% at 0 50%);
 }
 
+span{
+    font-weight: bold;
+    color: rgb(197, 0, 0);
+}
+
 
 
 

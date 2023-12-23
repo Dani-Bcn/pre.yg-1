@@ -48,7 +48,7 @@ export default function Carousel() {
                alignItems:"center",
                justifyContent:"center"
                }}  >
-                 <p className="w-full h-60 backdrop-brightness-50 text-white text-center font-bold justify-center items-center  text-3xl flex  ">{e.text}</p>                 
+                 <p className=" h-60 backdrop-brightness-50 text-white text-center font-bold justify-center items-center  text-3xl flex  ">{e.text}</p>                 
               </div>
             </section>
           );
