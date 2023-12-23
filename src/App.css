@@ -7,18 +7,6 @@
     margin: 0;
 }
 
-#divImg{
-    width: 100vw;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    background-size: contain;
-    font-size: "rem";
-    font-weight: bold;
-    color: white;
-}
 
 
 
