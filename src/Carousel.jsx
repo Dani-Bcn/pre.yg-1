@@ -23,28 +23,19 @@ export default function Carousel() {
 
   return (
     <main>
-      <section className="flex h-52 overflow-auto">
-         { arrayCarousel.map((e, i) => {
-              console.log(arrayCarousel[i]);
-              return ( 
-        <section key={i} className="flex justify-center items-center">
-           <div
-            className={`w-screen               
-               h-60 flex justify-center 
-               items-center 
-                bg-[url("${e.url}")]
-               bg-center bg-cover
-               text-white
-               text-4xl
-               font-bold`}
-          >
-            <p className="w-full h-52 text-center flex  ">{e.text}</p>
-          </div>
-        </section> 
-             );
-            })
-         } 
-       
+      <section className="flex w-screen h-52 overflow-auto">
+        {arrayCarousel.map((e, i) => {
+          console.log(e.url);
+          return (
+            <section key={e.url} className="flex w-screen h-52 justify-center items-center">
+              <div width={900}
+              id="divImg"
+               style={{background:`url(${e.url})`}}  >
+              <p className="w-screen  h-52 text-center flex  ">{e.text}</p>
+              </div>
+            </section>
+          );
+        })}
       </section>
     </main>
   );
