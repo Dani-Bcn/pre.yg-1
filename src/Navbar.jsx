@@ -46,7 +46,7 @@ export default function Navbar(props) {
 
   return (
     <main className="  overflow-hidden w-full h-[55px] mt-10 flex justify-between items-center">
-      <img src="/img/descarga.png" width={125} alt="img" />
+      <img src="src/img/descarga.png" width={125} alt="img" />
       <section
         id="cnt"
         onClick={() => {setOpenMenu(!openMenu), openMenuResp(setStateMenuResp(!stateMenuResp))}}

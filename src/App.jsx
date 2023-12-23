@@ -14,7 +14,7 @@ const [stateMenuResp, setStateMenuResp] = useState(false)
   })
 
   return (
-    <main className='w-full h-full flex flex-col'>
+    <main className='flex flex-col'>
      <Tienda/>
      <Navbar 
      openMenuResp={openMenuResp}
