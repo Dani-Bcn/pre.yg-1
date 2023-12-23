@@ -5,6 +5,7 @@ import MenuResponsive from "./MenuResponsive";
 import Carousel from "./Carousel";
 import Fresado from "./Soluciones/Fresado";
 import { useState } from "react";
+import Eventos from "./Eventos";
 
 function App() {
   const [stateMenuResp, setStateMenuResp] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       url: "assets/sistema_herramientas.jpg",
       text: "Sistemas de herramientas",
     },
+    
   ];
 
   return (
@@ -39,7 +41,7 @@ function App() {
 
       <section className="m-auto mt-14 w-full h-full flex flex-col">
         <h2 className=" py-2 px-7 text-3xl">Soluciones</h2>
-        <div className="mx-7 w-12 h-[1px]  -mt-2 mb-2 bg-red-700"></div>
+        <div className="mx-7 w-12 h-[2px]  -mt-2 mb-2 bg-red-700"></div>
         <article className="w-full flex flex-wrap  justify-center">
           {arraySoluciones.map((e, i) => {
             return (
@@ -53,7 +55,12 @@ function App() {
       </section>
       <section className="py-14 bg-gradient-to-b from-gray-200 to-slate-50 flex mt-20 w-screen h-62 overflow-auto">
         <article className="flex flex-col justify-center items-center">
-          <img src="assets/matrices_moldes.png" alt="img" width={2000} className="w-screen"/>
+          <img
+            src="assets/matrices_moldes.png"
+            alt="img"
+            width={2000}
+            className="w-screen"
+          />
           <p className="w-screen pl-20 text-3xl">
             Industria
             <br /> <span>Matrices y molde</span>
@@ -62,20 +69,18 @@ function App() {
         <article className="flex flex-col">
           <img src="assets/automocion.png" alt="img" />
           <p className="w-screen pl-24 text-3xl">
-            Industria <br/><span>Automoción</span>
+            Industria <br />
+            <span>Automoción</span>
           </p>
         </article>
         <article className="flex flex-col">
-          <img
-            src="assets/aeroespacial.png"
-            alt="img"
-            className="w-screen "
-          />
-        <p className="w-screen pl-24 text-3xl">
+          <img src="assets/aeroespacial.png" alt="img" className="w-screen " />
+          <p className="w-screen pl-24 text-3xl">
             Industria <span>Aeroespacial</span>
           </p>
         </article>
       </section>
+      <Eventos/>    
     </main>
   );
 }
