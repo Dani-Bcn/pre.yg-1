@@ -14,8 +14,8 @@ stateMenuResp?
     })
 
   return (
-    <main id="mainMenu" onClick={()=> setStateMenuResp(false)} className="ml-[-100vw] fixed w-full h-full flex items-center justify-start bg-red-300/[0.7] backdrop-blur-sm">
-      <ul className=" p-10 gap-10 text-3xl font-bold flex flex-col w-full ">
+    <main id="mainMenu" onClick={()=> setStateMenuResp(false)} className="ml-[-100vw] fixed w-full h-full flex items-center justify-start bg-red-300/[0.8] backdrop-blur-sm">
+      <ul className=" p-10 gap-10 text-3xl text-white font-bold flex flex-col w-full ">
         <li>
           <p>Inicio</p>
         </li>

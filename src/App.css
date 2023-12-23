@@ -8,7 +8,7 @@
 }
 
     #mainMenu{
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+        clip-path: circle(50% at 0 50%);
 }
 
 
