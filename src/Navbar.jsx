@@ -45,7 +45,7 @@ export default function Navbar(props) {
   }, [openMenu]);
 
   return (
-    <main className="  overflow-hidden w-full h-[55px] mt-10 flex justify-between items-center">
+    <main className="z-50 fixed overflow-hidden w-full h-[55px] mt-10 flex justify-between items-center bg-white/[0.5] backdrop-blur-md ">
       <img src="assets/descarga.png" width={125} alt="img" />
       <section
         id="cnt"

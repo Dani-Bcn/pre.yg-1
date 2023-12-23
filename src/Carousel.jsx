@@ -33,7 +33,7 @@ export default function Carousel() {
 
 
   return (
-    <main id="main">
+    <main id="main" className="mt-24">
       <section className="flex w-screen h-62 overflow-auto">
         {arrayCarousel.map((e, i) => {
           console.log(e.url);
