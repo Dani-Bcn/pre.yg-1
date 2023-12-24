@@ -1,8 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Soluciones() {
-  const arraySoluciones = [
-    { url: "assets/fresado.jpg", text: "Fresado" },
+
+    const navigate = useNavigate()
+
+    const arraySoluciones = [
+    { url: "assets/fresado.jpg", text: "Fresado",link:"fresado" },
     { url: "assets/taladrado.jpg", text: "Taladrado" },
     { url: "assets/roscado.jpg", text: "Roscado" },
     { url: "assets/fijacion_mecanica.jpg", text: "Fijación mecánica" },
@@ -22,7 +26,7 @@ export default function Soluciones() {
             return (
               <div key={i} className="h-72 flex flex-col justify-start  ">
                 <img key={i} className="w-44  p-2 h-52" src={e.url} alt="img" />
-                <p className="ml-2 w-36 font-bold text-2xl">{e.text}</p>
+                <p onClick={()=>{navigate("/fresado")}} className="ml-2 w-36 font-bold text-2xl">{e.text}</p>
               </div>
             );
           })}
