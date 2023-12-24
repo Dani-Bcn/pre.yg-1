@@ -10,7 +10,7 @@ export default function Productos() {
         </div>
         <div 
       
-        className="w-screen h-72 "
+        className="w-[90vw] h-72 "
         style={{background:`url(assets/prime.png)`,
         backgroundPositionY:-75,
         backgroundSize:350,
