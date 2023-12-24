@@ -2,15 +2,15 @@ import React from "react";
 
 export default function Fresado() {
   const arraySolution = [
-    { img: "/public/assets/gs.png",text:"Aceros de fácil mecanización Rm<850N/mm²" },
-    { img: "/public/assets/vg.png",text:"Aceros tratados y resistentes al calor Rm<850N/mm² ≤Rm ≤1200N/mm²" },
-    { img: "/public/assets/va.png" ,text:"Aceros inoxidables"},
-    { img: "/public/assets/nw.png" ,text:"Aceros al carbono de baja aleación Rm<700N/mm²"},
-    { img: "/public/assets/ti.png" ,text:"Titanio y sus aleaciones"},
-    { img: "/public/assets/ni.png" ,text:"Aleaciones con base de Níquel"},
-    { img: "/public/assets/ai.png" ,text:"Aluminio y materiales no metálicos"},
-    { img: "/public/assets/gg.png" ,text:"Fundición gris"},
-    { img: "/public/assets/ms.png" ,text:"Bronce, y aleaciones de cobre"},
+    { img: "assets/gs.png",text:"Aceros de fácil mecanización Rm<850N/mm²" },
+    { img: "assets/vg.png",text:"Aceros tratados y resistentes al calor Rm<850N/mm² ≤Rm ≤1200N/mm²" },
+    { img: "assets/va.png" ,text:"Aceros inoxidables"},
+    { img: "assets/nw.png" ,text:"Aceros al carbono de baja aleación Rm<700N/mm²"},
+    { img: "assets/ti.png" ,text:"Titanio y sus aleaciones"},
+    { img: "assets/ni.png" ,text:"Aleaciones con base de Níquel"},
+    { img: "assets/ai.png" ,text:"Aluminio y materiales no metálicos"},
+    { img: "assets/gg.png" ,text:"Fundición gris"},
+    { img: "assets/ms.png" ,text:"Bronce, y aleaciones de cobre"},
   ];
   return (
     <main className="w-screen h-screen mt-24">
@@ -26,7 +26,7 @@ export default function Fresado() {
               <div key={i} className="w-40 h-62 my-2 text-white text-center hover:bg-gray-800 bg-gray-400  rounded-2xl flex flex-col justify-start items-center">
                 <img
                   src={e.img}
-                  alt=""
+                  alt="img"
                   className="w-20 h-20 px m-3  "
                 />
                 <p className=" w-32 p-3 text-start">

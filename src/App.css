@@ -11,6 +11,9 @@ span{
     font-weight: bold;
     color: rgb(197, 0, 0);
 }
+img{
+    cursor: pointer;
+}
 
 
 

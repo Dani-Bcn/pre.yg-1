@@ -3,6 +3,11 @@ import Tienda from "./Tienda";
 import Navbar from "./Navbar";
 import Fresado from "./Soluciones/Fresado";
 import Footer from "./Footer";
+import Taladrado from "./Soluciones/Taladrado";
+import Roscado from "./Soluciones/Roscado";
+import Fijacion from "./Soluciones/Fijacion"
+import Sistemas from "./Soluciones/Sistemas"
+
 import Home from "./Home";
 import MenuResponsive from "./MenuResponsive";
 import { useState } from "react";
@@ -31,6 +36,10 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="fresado" element={<Fresado />} />
+        <Route path="taladrado" element={<Taladrado />} />
+        <Route path="roscado" element={<Roscado />} />
+        <Route path="fijacion" element={<Fijacion />} />
+        <Route path="sistemas" element={<Sistemas />} />
       </Routes>
       <Footer />
     </main>
