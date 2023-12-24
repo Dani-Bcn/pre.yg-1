@@ -11,12 +11,12 @@ export default function Soluciones() {
     {
       url: "assets/fijacion_mecanica.jpg",
       text: "Fijación mecánica",
-      link: "fijacion_macanica",
+      link: "fijacion",
     },
     {
       url: "assets/sistema_herramientas.jpg",
       text: "Sistemas de herramientas",
-      link: "sistemas_herramientas",
+      link: "sistemas",
     },
   ];
 
