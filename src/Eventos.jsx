@@ -5,7 +5,7 @@ export default function () {
     <main className="h-screen" >
       <section className="mt-10 w-[90vw] m-auto  h-72 flex flex-col">
         <h3 className=" font-semibold  text-3xl">Actualidad YG-1</h3>
-        <div className="mt-8  w-14 h-[2px]  bg-red-700"></div>
+        <div className="w-14 h-[2px]  bg-red-700"></div>
         <article className="mt-10">
           <h3 className="text-2xl">
             <span>YG-1 EN BIEHM</span>
