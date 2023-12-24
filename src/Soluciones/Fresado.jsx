@@ -26,7 +26,7 @@ export default function Fresado() {
       <section>
         <h2 className=" mt-7 px-7 text-4xl font-semibold">Fresado</h2>
         <div className="mx-7 w-12 h-[2px] mb-2 bg-red-700"></div>
-        <article className="flex flex-col  w-[90vw]  m-auto rounded-3xl my-10 bg-gray-400 p-2">
+        <article className="flex flex-col  w-[90vw]  m-auto rounded-3xl my-10  p-2">
           {arraySolution.map((e, i) => {
             return (
               <div
@@ -39,7 +39,7 @@ export default function Fresado() {
                   <div className="flex py-4 h-40  items-end gap-5 w-full">
                   <button 
                   className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">Catálogo</button>
-                <a href="https://www.tiendayg1.es/">  <button 
+                <a target="_blank" href="https://www.tiendayg1.es/tienda/seccion/0B">  <button 
                   className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">Tienda</button>                
                   </a>
                   </div>
