@@ -13,7 +13,7 @@ export default function Fresado() {
     { img: "assets/ms.png" ,text:"Bronce, y aleaciones de cobre"},
   ];
   return (
-    <main className="w-screen h-screen mt-24">
+    <main className="w-screen  mt-24">
       <header>
         <img src="assets/header_soluciones.png" alt="" />
       </header>
