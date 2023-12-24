@@ -7,7 +7,7 @@ import Taladrado from "./Soluciones/Taladrado";
 import Roscado from "./Soluciones/Roscado";
 import Fijacion from "./Soluciones/Fijacion"
 import Sistemas from "./Soluciones/Sistemas"
-
+import Gs_catalogos from "./Soluciones/catalogos_pdf/Gs_catalogos";
 import Home from "./Home";
 import MenuResponsive from "./MenuResponsive";
 import { useState } from "react";
@@ -40,6 +40,7 @@ function App() {
         <Route path="roscado" element={<Roscado />} />
         <Route path="fijacion" element={<Fijacion />} />
         <Route path="sistemas" element={<Sistemas />} />
+        <Route path="Gs_catalogo" element={<Gs_catalogos/>}/>
       </Routes>
       <Footer />
     </main>

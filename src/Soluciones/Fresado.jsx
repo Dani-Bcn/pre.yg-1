@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Fresado() {
-  const arraySolution = [
+  const navigate = useNavigate()
+  const arrayMilling = [
     { img: "assets/gs.png", text: "Aceros de fácil mecanización Rm<850N/mm²" },
     {
       img: "assets/vg.png",
@@ -18,6 +20,7 @@ export default function Fresado() {
     { img: "assets/gg.png", text: "Fundición gris" },
     { img: "assets/ms.png", text: "Bronce, y aleaciones de cobre" },
   ];
+ 
   return (
     <main className="  mt-24">
       <header>
@@ -27,7 +30,7 @@ export default function Fresado() {
         <h2 className=" mt-7 px-7 text-4xl font-semibold">Fresado</h2>
         <div className="mx-7 w-12 h-[2px] mb-2 bg-red-700"></div>
         <article className="flex flex-col  w-[90vw]  m-auto rounded-3xl my-10  p-2">
-          {arraySolution.map((e, i) => {
+          {arrayMilling.map((e, i) => {
             return (
               <div
                 key={i}
@@ -37,8 +40,12 @@ export default function Fresado() {
                 <div className="flex flex-col w-full h-full ">
                   <p className=" w-62 p-3 text-start">{e.text}</p>
                   <div className="flex py-4 h-40  items-end gap-5 w-full">
-                    <button className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
-                      Catálogo
+                    <button 
+                    onClick={()=> navigate("/Gs_catalogo")} 
+                    className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
+                     
+                        <p>Catálogos</p>
+                     
                     </button>
                     <button className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
                       <a
