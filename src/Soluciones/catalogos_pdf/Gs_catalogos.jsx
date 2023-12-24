@@ -84,7 +84,7 @@ export default function Gs_catalogos() {
 
       {arrayGsCatalog.map((e, i) => {
         return (
-          <a href="/public/pdf/ye-4g20-4g.pdf" target="_blank"
+          <a href="pdf/ye-4g20-4g.pdf" target="_blank"
           >
           
 
