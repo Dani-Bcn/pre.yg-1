@@ -31,7 +31,7 @@ export default function Fresado() {
             return (
               <div
                 key={i}
-                className="w-full h-40  my-2 text-white  hover:bg-gray-800 bg-gray-500  rounded-2xl flex "
+                className="w-full h-40  my-2 text-white  hover:bg-gray-800 bg-gray-400  rounded-2xl flex "
               >
                 <img src={e.img} alt="img" className="w-20 h-20 px m-3  " />
                 <div className="flex flex-col w-full h-full ">
@@ -40,7 +40,6 @@ export default function Fresado() {
                     <button className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
                       Catálogo
                     </button>
-
                     <button className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
                       <a
                         target="_blank"
