@@ -20,10 +20,10 @@ export default function Fresado() {
       <section>
         <h2 className=" mt-7 px-7 text-4xl font-semibold">Fresado</h2>
         <div className="mx-7 w-12 h-[2px] mb-2 bg-red-700"></div>
-        <article className="flex flex-wrap justify-around  w-[90vw] h-96 m-auto rounded-3xl my-10 bg-gray-200 p-2">
+        <article className="flex flex-wrap justify-around  w-[90vw]  m-auto rounded-3xl my-10 bg-gray-400 p-2">
           {arraySolution.map((e, i) => {
             return (
-              <div key={i} className="w-40 h-62 my-2 text-white text-center bg-slate-800 rounded-2xl flex flex-col justify-start items-center">
+              <div key={i} className="w-40 h-62 my-2 text-white text-center hover:bg-gray-800 bg-gray-400  rounded-2xl flex flex-col justify-start items-center">
                 <img
                   src={e.img}
                   alt=""

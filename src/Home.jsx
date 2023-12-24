@@ -31,7 +31,7 @@ export default function Home() {
       <article className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600">
         <p>Noticias +</p>
       </article>
-      <Footer />
+   
     </main>
   );
 }

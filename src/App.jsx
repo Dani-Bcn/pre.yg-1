@@ -2,6 +2,7 @@ import "./App.css";
 import Tienda from "./Tienda";
 import Navbar from "./Navbar";
 import Fresado from "./Soluciones/Fresado";
+import Footer from "./Footer";
 import Home from "./Home";
 import MenuResponsive from "./MenuResponsive";
 import { useState } from "react";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="fresado" element={<Fresado />} />
       </Routes>
+      <Footer />
     </main>
   );
 }
