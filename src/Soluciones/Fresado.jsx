@@ -39,8 +39,8 @@ export default function Fresado() {
                   <div className="flex py-4 h-40  items-end gap-5 w-full">
                   <button 
                   className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">Catálogo</button>
-                <a target="_blank" href="https://www.tiendayg1.es/tienda/seccion/0B">  <button 
-                  className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">Tienda</button>                
+                <a target="_blank" href="https://www.tiendayg1.es/tienda/seccion/0B">  
+                <button  className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">Tienda</button>                
                   </a>
                   </div>
                 </div>
