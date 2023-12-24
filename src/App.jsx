@@ -8,6 +8,7 @@ import { useState } from "react";
 import Eventos from "./Eventos";
 import Productos from "./Productos";
 import Soluciones from "./Soluciones";
+import Footer from "./Footer";
 
 function App() {
   const [stateMenuResp, setStateMenuResp] = useState(false);
@@ -42,9 +43,10 @@ function App() {
       <Soluciones />
       <Eventos />
       <Productos />
-      <article className="text-white text-2xl flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600">
-        <p className="font-semibold">Noticias +</p>
+      <article className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600">
+        <p>Noticias +</p>
       </article>
+      <Footer/>
     </main>
   );
 }

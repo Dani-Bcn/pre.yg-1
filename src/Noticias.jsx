@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Noticias() {
+export default function () {
   return (
-    <div>Noticias</div>
+    <div></div>
   )
 }
