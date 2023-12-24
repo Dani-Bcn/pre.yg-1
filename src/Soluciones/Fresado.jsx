@@ -19,7 +19,7 @@ export default function Fresado() {
     { img: "assets/ms.png", text: "Bronce, y aleaciones de cobre" },
   ];
   return (
-    <main className="w-screen  mt-24">
+    <main className="  mt-24">
       <header>
         <img src="assets/header_soluciones.png" alt="" />
       </header>
@@ -31,7 +31,7 @@ export default function Fresado() {
             return (
               <div
                 key={i}
-                className="w-full h-40  my-2 text-white  hover:bg-gray-800 bg-gray-400  rounded-2xl flex "
+                className="w-full h-40  my-2 text-white  hover:bg-gray-800 bg-gray-400 rounded-2xl flex "
               >
                 <img src={e.img} alt="img" className="w-20 h-20 px m-3  " />
                 <div className="flex flex-col w-full h-full ">
