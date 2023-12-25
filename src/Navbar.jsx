@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar(props) {
   const { stateMenuResp } = props;
   const { setStateMenuResp } = props;
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (stateMenuResp) {
@@ -46,7 +48,7 @@ export default function Navbar(props) {
 
   return (
     <main className="z-50 fixed overflow-hidden w-full h-[55px] mt-10 flex justify-between items-center bg-white/[0.5] backdrop-blur-md ">
-      <img src="assets/descarga.png" width={125} alt="img" />
+      <img onClick={()=> navigate("/")} src="assets/descarga.png" width={125} alt="img" />
       <section
         id="cnt"
         onClick={() => setStateMenuResp(!stateMenuResp)}
