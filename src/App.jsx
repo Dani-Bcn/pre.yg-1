@@ -17,6 +17,9 @@ import { useState } from "react";
 import { Route, useLocation, Routes } from "react-router-dom";
 import Quienes_somos from "./Home/Quienes_somos";
 import Historia from "./Home/Historia";
+import Mision from "./Home/Mision";
+import Contacto from "./Home/Contacto";
+import YG_world from "./Home/YG_wold";
 
 function App() {
   const openMenuResp = () => {
@@ -49,6 +52,9 @@ function App() {
         <Route path="fresado/nw_catalogos" element={<Nw_catalogos/>}/>
         <Route path="quienes_somos" element={<Quienes_somos/>}/>
         <Route path="historia" element={<Historia/>}/>
+        <Route path="mision" element={<Mision/>}/>
+        <Route path="contacto" element={<Contacto/>}/>
+        <Route path="yg-1-world" element={<YG_world/>}/>
       </Routes>
       <Footer />
     </main>

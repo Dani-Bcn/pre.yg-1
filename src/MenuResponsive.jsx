@@ -18,10 +18,10 @@ export default function MenuResponsive(props) {
         x: 0,
       });
 
-      useEffect(()=>{
-        setSoluciones(false)
-        setYg(false)
-      },[stateMenuResp])
+  useEffect(() => {
+    setSoluciones(false);
+    setYg(false);
+  }, [stateMenuResp]);
 
   return (
     <main
@@ -32,8 +32,10 @@ export default function MenuResponsive(props) {
         <li>
           <p
             onClick={() => {
-              navigate("/"), setStateMenuResp(false),
-              setSoluciones(false), setYg(false)
+              navigate("/"),
+                setStateMenuResp(false),
+                setSoluciones(false),
+                setYg(false);
             }}
           >
             Inicio
@@ -51,18 +53,46 @@ export default function MenuResponsive(props) {
             className="absolute w-48 flex flex-col gap-5 -mt-32 p-5 text-[1.2rem] rounded-3xl text-red-600  bg-slate-50 ml-[200vw]"
             animate={{
               x: yg ? "-157vw" : 0,
-              opacity: yg ? 1 : 0, 
+              opacity: yg ? 1 : 0,
               transition: {
                 duration: 0.5,
               },
             }}
           >
-            <li onClick={()=> {navigate("/quienes_somos"),setStateMenuResp(false)}}>Quienes somos</li>
-            <li  onClick={()=> {navigate("/historia"),setStateMenuResp(false)}}>Historia </li>
-            <li>Mision</li>
-            <li>YG en el mundo</li>
+            <li
+              onClick={() => {
+                navigate("/quienes_somos"), setStateMenuResp(false);
+              }}
+            >
+              Quienes somos
+            </li>
+            <li
+              onClick={() => {
+                navigate("/historia"), setStateMenuResp(false);
+              }}
+            >
+              Historia{" "}
+            </li>
+            <li
+              onClick={() => {
+                navigate("/mision"), setStateMenuResp(false);
+              }}
+            >
+              Mision
+            </li>
+            <li 
+              onClick={() => {
+                navigate("/yg-1-world"), setStateMenuResp(false);
+              }}
+            >YG en el mundo</li>
             <li>Quienes somos</li>
-            <li>Contacto</li>
+            <li
+              onClick={() => {
+                navigate("/contacto"), setStateMenuResp(false);
+              }}
+            >
+              Contacto
+            </li>
           </m.ul>
         </li>
         <li>
@@ -73,7 +103,7 @@ export default function MenuResponsive(props) {
             className="absolute   flex flex-col gap-5 -mt-52 p-5 text-[1.2rem] text-red-600 rounded-3xl bg-slate-50 ml-[200vw]"
             animate={{
               x: soluciones ? "-152vw" : 0,
-             opacity: soluciones ? 1 : 0,
+              opacity: soluciones ? 1 : 0,
               transition: {
                 duration: 0.5,
               },
@@ -98,7 +128,6 @@ export default function MenuResponsive(props) {
                 navigate("/roscado"), setStateMenuResp(false);
               }}
             >
-              {" "}
               Roscado
             </li>
             <li
