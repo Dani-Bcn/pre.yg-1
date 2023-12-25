@@ -9,6 +9,7 @@ import Fijacion from "./Soluciones/Fijacion"
 import Sistemas from "./Soluciones/Sistemas"
 import Gs_catalogos from "./Soluciones/catalogos_pdf/Gs_catalogos";
 import Va_catalogos from "./Soluciones/catalogos_pdf/Va_catalogos";
+import Nw_catalogos from "./Soluciones/catalogos_pdf/Nw_catalogos";
 import Home from "./Home";
 import MenuResponsive from "./MenuResponsive";
 import { useState } from "react";
@@ -43,6 +44,7 @@ function App() {
         <Route path="sistemas" element={<Sistemas />} />
         <Route path="fresado/gs_catalogos" element={<Gs_catalogos/>}/>
         <Route path="fresado/va_catalogos" element={<Va_catalogos/>}/>
+        <Route path="fresado/nw_catalogos" element={<Nw_catalogos/>}/>
       </Routes>
       <Footer />
     </main>

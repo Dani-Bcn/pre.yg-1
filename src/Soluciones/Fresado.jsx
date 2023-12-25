@@ -13,10 +13,10 @@ export default function Fresado() {
     { img: "assets/va.png", text: "Aceros inoxidables",link:"va_catalogos" },
     {
       img: "assets/nw.png",
-      text: "Aceros al carbono de baja aleación Rm<700N/mm²",link:"va_catalogos"
+      text: "Aceros al carbono de baja aleación Rm<700N/mm²",link:"nw_catalogos"
     },
     { img: "assets/ti.png", text: "Titanio y sus aleaciones",link:"va_catalogos" },
-    { img: "assets/ni.png", text: "Aleaciones con base de Níquel",link:"va_catalogos" },
+    { img: "assets/ni.png", text: "Aleaciones con base de Níquel",link:"Nw_catalogos" },
     { img: "assets/ai.png", text: "Aluminio y materiales no metálicos",link:"va_catalogos" },
     { img: "assets/gg.png", text: "Fundición gris",link:"va_catalogos" },
     { img: "assets/ms.png", text: "Bronce, y aleaciones de cobre",link:"va_catalogos" },

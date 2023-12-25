@@ -2,7 +2,7 @@ import React from "react";
 
 export default function () {
   return (
-    <main className="h-screen" >
+    <main className="h-[700px]" >
       <section className="mt-10 w-[90vw] m-auto  h-72 flex flex-col">
         <h3 className=" font-semibold  text-3xl">Actualidad YG-1</h3>
         <div className="w-14 h-[2px]  bg-red-700"></div>
