@@ -54,25 +54,25 @@ export default function Gs_catalogos() {
       title:"HSSCo END MILLS",
       img: "catalogos/HSSCo-END-MILLS.jpg",
       text: "Fresas HSSCo para uso general.",
-      link: "hss-end-mills.pdf",
+      link: "pdf/hss-end-mills.pdf",
     },
     {
       title:"MILLING CUTTERS",
       img: "catalogos/MILLING-CUTTERS.jpg",
       text: "Fresas HSSCo al 5% y al 8% para ranurar en T, Woodruff, de disco, de vaso, angulares (cola de Milano).",
-      link: "milling-cutters.pdf",
+      link: "pdf/milling-cutters.pdf",
     },
     {
       title:"ROTARY BURS",
       img: "catalogos/ROTARY-BURS.jpg",
       text: "Programa de fresas rotativas de uso general.",
-      link: "pdf/ye-4g20-4g.pdf",
+      link: "pdf/rotary-burrs.pdf",
     },
     {
       title:"VHM",
       img: "catalogos/VHM.jpg",
       text: "Fresas de biselar en metal duro de 4 labios y recubrimiento TiCN.",
-      link: "pdf/ye-4g20-4g.pdf",
+      link: "pdf/vhm.pdf",
     },
   ];
 

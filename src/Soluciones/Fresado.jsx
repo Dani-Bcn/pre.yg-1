@@ -4,21 +4,22 @@ import { useNavigate } from "react-router-dom";
 export default function Fresado() {
   const navigate = useNavigate()
   const arrayMilling = [
-    { img: "assets/gs.png", text: "Aceros de fácil mecanización Rm<850N/mm²" },
+    { img: "assets/gs.png", text: "Aceros de fácil mecanización Rm<850N/mm²",link:"gs_catalogos" },
     {
       img: "assets/vg.png",
       text: "Aceros tratados y resistentes al calor Rm<850N/mm² ≤Rm ≤1200N/mm²",
+      link:"gs_catalogos"
     },
-    { img: "assets/va.png", text: "Aceros inoxidables" },
+    { img: "assets/va.png", text: "Aceros inoxidables",link:"va_catalogos" },
     {
       img: "assets/nw.png",
-      text: "Aceros al carbono de baja aleación Rm<700N/mm²",
+      text: "Aceros al carbono de baja aleación Rm<700N/mm²",link:"va_catalogos"
     },
-    { img: "assets/ti.png", text: "Titanio y sus aleaciones" },
-    { img: "assets/ni.png", text: "Aleaciones con base de Níquel" },
-    { img: "assets/ai.png", text: "Aluminio y materiales no metálicos" },
-    { img: "assets/gg.png", text: "Fundición gris" },
-    { img: "assets/ms.png", text: "Bronce, y aleaciones de cobre" },
+    { img: "assets/ti.png", text: "Titanio y sus aleaciones",link:"va_catalogos" },
+    { img: "assets/ni.png", text: "Aleaciones con base de Níquel",link:"va_catalogos" },
+    { img: "assets/ai.png", text: "Aluminio y materiales no metálicos",link:"va_catalogos" },
+    { img: "assets/gg.png", text: "Fundición gris",link:"va_catalogos" },
+    { img: "assets/ms.png", text: "Bronce, y aleaciones de cobre",link:"va_catalogos" },
   ];
  
   return (
@@ -41,7 +42,7 @@ export default function Fresado() {
                   <p className=" w-62 p-3 text-start">{e.text}</p>
                   <div className="flex py-4 h-40  items-end gap-5 w-full">
                     <button 
-                    onClick={()=> navigate("/Gs_catalogo")} 
+                    onClick={()=> navigate(e.link)} 
                     className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
                      
                         <p>Catálogos</p>
