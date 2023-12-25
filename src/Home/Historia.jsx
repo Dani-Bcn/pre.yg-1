@@ -204,6 +204,7 @@ export default function Historia() {
   return (
     <main className="mt-24">
       <section className="p-5">
+        <h2 className=" text-red-600 font-bold text-4xl py-3">Historia YG-1</h2>
         {arrayHistory.map((e, i) => {
           return (
             <article key={i}>
