@@ -5,7 +5,7 @@ export default function Va_catalogos() {
     {
       title: "TITANOX POWER",
       img: "catalogos/TITANOX-POWER.jpg",
-      text: "Programa de copiado 3D para molde y matriz.",
+      text: "Mecanizado de materiales exóticos a altas velocidades: Titanio, Inconel y Aceros Inoxidables.",
       link: "https://www.yg1.kr/_include/preview.asp?uploadFile=2023082413514498.pdf&CatalogName=%5BYE%2DTP23%5D+TitaNox+Power+Metric%5Fspread%2Epdf",
     },
     {
@@ -23,7 +23,7 @@ export default function Va_catalogos() {
     {
       title: "ONLY ONE",
       img: "catalogos/ONLY-ONE.jpg",
-      text: "FRESAS HSS-PM PARA EL MECANIZADO EN CONDICIONES INESTABLES.",
+      text: "Fresas HSS-PM para el mecanizado en condiciones inestables.",
       link: "https://www.yg1.kr/_include/preview.asp?uploadFile=2018091216565759.pdf&CatalogName=%5BYE%2DOP16%5DOnlyOne%5F20180711%5F%ED%8E%BC%EC%B9%A8%2Epdf",
     },
     {
