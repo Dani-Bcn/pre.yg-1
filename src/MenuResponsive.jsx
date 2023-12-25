@@ -58,7 +58,7 @@ export default function MenuResponsive(props) {
             }}
           >
             <li onClick={()=> {navigate("/quienes_somos"),setStateMenuResp(false)}}>Quienes somos</li>
-            <li>Historia </li>
+            <li  onClick={()=> {navigate("/historia"),setStateMenuResp(false)}}>Historia </li>
             <li>Mision</li>
             <li>YG en el mundo</li>
             <li>Quienes somos</li>

@@ -16,6 +16,7 @@ import { useState } from "react";
 
 import { Route, useLocation, Routes } from "react-router-dom";
 import Quienes_somos from "./Home/Quienes_somos";
+import Historia from "./Home/Historia";
 
 function App() {
   const openMenuResp = () => {
@@ -47,6 +48,7 @@ function App() {
         <Route path="fresado/va_catalogos" element={<Va_catalogos/>}/>
         <Route path="fresado/nw_catalogos" element={<Nw_catalogos/>}/>
         <Route path="quienes_somos" element={<Quienes_somos/>}/>
+        <Route path="historia" element={<Historia/>}/>
       </Routes>
       <Footer />
     </main>
