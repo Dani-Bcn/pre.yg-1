@@ -15,6 +15,7 @@ import MenuResponsive from "./MenuResponsive";
 import { useState } from "react";
 
 import { Route, useLocation, Routes } from "react-router-dom";
+import Quienes_somos from "./Home/Quienes_somos";
 
 function App() {
   const openMenuResp = () => {
@@ -45,6 +46,7 @@ function App() {
         <Route path="fresado/gs_catalogos" element={<Gs_catalogos/>}/>
         <Route path="fresado/va_catalogos" element={<Va_catalogos/>}/>
         <Route path="fresado/nw_catalogos" element={<Nw_catalogos/>}/>
+        <Route path="quienes_somos" element={<Quienes_somos/>}/>
       </Routes>
       <Footer />
     </main>
