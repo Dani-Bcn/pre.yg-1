@@ -240,6 +240,7 @@ export default function Historia() {
               {arrayHistory[i].length > 9 ? (
                 <p>{arrayHistory[i][9].text}</p>
               ) : null}
+              <div className="w-[60vw] h-[1.5px] bg-red-700 m-auto my-5"></div>
             </article>
           );
         })}
