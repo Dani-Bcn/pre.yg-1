@@ -23,6 +23,7 @@ import YG_world from "./Home/YG_wold";
 import Equipo from "./Equipo/Equipo";
 import Noticias from "./Noticias";
 import Roscado_prime_tap from "./Noticias/roscado_prime_tap";
+import Catalogo_general from "./Noticias/Catalogo_general";
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
         <Route path="equipo" element={<Equipo/>}/>
         <Route path="noticias" element={<Noticias/>}/>
         <Route path="noticias/roscado" element={<Roscado_prime_tap/>}/>
+        <Route path="noticias/catalogo" element={<Catalogo_general/>}/>
        
       </Routes>
       <Footer />

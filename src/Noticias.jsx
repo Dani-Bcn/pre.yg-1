@@ -16,7 +16,7 @@ export default function () {
       />
       <h3 className='text-2xl text-red-600 font-semibold'>ROSCADO DE YG-1 DE ALTO RENDIMIENTO</h3>
       <p>Lanzamiento de los nuevos machos HSS-PM de alto rendimento PRIME TAPS.</p>      
-      <section>
+      <section onClick={()=> navigate("catalogo")}>
         <img src="/public/assets/catalog_book_samp_210929.png" width={900} alt="img" 
         className='my-5'
         />
