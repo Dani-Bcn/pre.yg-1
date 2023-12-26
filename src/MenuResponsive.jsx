@@ -145,7 +145,11 @@ export default function MenuResponsive(props) {
             </li>
           </m.ul>
         </li>
-        <li>
+        <li
+        onClick={() => {
+          navigate("/equipo"), setStateMenuResp(false);
+        }}
+        >
           <p>Equipo</p>
         </li>
         <li>

@@ -5,7 +5,7 @@ export default function Quienes_somos() {
     <main className="w-screen flex flex-col mt-24">
       <h1 className="p-5 text-3xl font-bold">Quienes somos</h1>
       <section className="flex flex-wrap  ">
-        <article className="w-96   bg-slate-300 m-5 p-4">
+        <article className="w-96   bg-slate-200 m-5 p-4">
           <h2 className="text-2xl font-semibold py-5">Ajustado control de calidad</h2>
           <h3>Eficiencia que consigue la confianza del cliente</h3>
           <p>
@@ -15,7 +15,7 @@ export default function Quienes_somos() {
             exportaba el 100% de sus ventas a América.
           </p>
         </article>
-        <article className="w-96  bg-slate-300 m-5 p-4">
+        <article className="w-96  bg-slate-200 m-5 p-4">
           <h2 className="text-2xl font-semibold py-5">Gestión de productos</h2>
           <h3>Efficiency Building Customer Trust</h3>
           <p>
@@ -24,7 +24,7 @@ export default function Quienes_somos() {
             entrega.
           </p>
         </article>
-        <article className="w-96  bg-slate-300 m-5 p-4">
+        <article className="w-96  bg-slate-200 m-5 p-4">
           <h2 className="text-2xl font-semibold py-5">RR.HH. e I+D</h2>
           <h3>Inversiones ilimitadas en Recursos Humanos e I+D</h3>
           <p>
@@ -40,8 +40,8 @@ export default function Quienes_somos() {
         diversificación de artículos.
       </p>
       <article className="w-96">
-        <div className="bg-slate-300 m-5 p-4">
-          <h2 className="text-2xl font-semibold py-5">
+        <div className="bg-slate-200 m-5 p-4">
+          <h2 className="text-3xl font-semibold py-5">
             Los nuevos productos de YG-1 siempre empiezan desde cero
           </h2>
           <p>

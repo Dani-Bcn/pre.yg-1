@@ -20,6 +20,7 @@ import Historia from "./Home/Historia";
 import Mision from "./Home/Mision";
 import Contacto from "./Home/Contacto";
 import YG_world from "./Home/YG_wold";
+import Equipo from "./Equipo/Equipo";
 
 function App() {
   const openMenuResp = () => {
@@ -55,7 +56,7 @@ function App() {
         <Route path="mision" element={<Mision/>}/>
         <Route path="contacto" element={<Contacto/>}/>
         <Route path="yg-1-world" element={<YG_world/>}/>
-        
+        <Route path="equipo" element={<Equipo/>}/>
       </Routes>
       <Footer />
     </main>
