@@ -28,7 +28,7 @@ export default function MenuResponsive(props) {
       id="mainMenu"
       className="z-[50] ml-[-100vw] fixed  w-full h-full flex items-center justify-start bg-red-700/[0.8] backdrop-blur-md"
     >
-      <ul className="p-5 gap-10 text-3xl text-white font-bold flex flex-col w-full ">
+      <ul className="p-5 gap-5 text-2xl text-white font-bold flex flex-col w-full ">
         <li>
           <p
             onClick={() => {
