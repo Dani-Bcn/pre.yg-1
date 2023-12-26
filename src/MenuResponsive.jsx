@@ -80,11 +80,13 @@ export default function MenuResponsive(props) {
             >
               Mision
             </li>
-            <li 
+            <li
               onClick={() => {
                 navigate("/yg-1-world"), setStateMenuResp(false);
               }}
-            >YG en el mundo</li>
+            >
+              YG en el mundo
+            </li>
             <li
               onClick={() => {
                 navigate("/contacto"), setStateMenuResp(false);
@@ -146,13 +148,17 @@ export default function MenuResponsive(props) {
           </m.ul>
         </li>
         <li
-        onClick={() => {
-          navigate("/equipo"), setStateMenuResp(false);
-        }}
+          onClick={() => {
+            navigate("/equipo"), setStateMenuResp(false);
+          }}
         >
           <p>Equipo</p>
         </li>
-        <li>
+        <li
+          onClick={() => {
+            navigate("/noticias"), setStateMenuResp(false);
+          }}
+        >
           <p>Noticias</p>
         </li>
       </ul>

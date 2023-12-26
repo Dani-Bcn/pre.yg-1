@@ -21,6 +21,9 @@ import Mision from "./Home/Mision";
 import Contacto from "./Home/Contacto";
 import YG_world from "./Home/YG_wold";
 import Equipo from "./Equipo/Equipo";
+import Noticias from "./Noticias";
+import Roscado_prime_tap from "./Noticias/roscado_prime_tap";
+
 
 function App() {
   const openMenuResp = () => {
@@ -57,6 +60,9 @@ function App() {
         <Route path="contacto" element={<Contacto/>}/>
         <Route path="yg-1-world" element={<YG_world/>}/>
         <Route path="equipo" element={<Equipo/>}/>
+        <Route path="noticias" element={<Noticias/>}/>
+        <Route path="noticias/roscado" element={<Roscado_prime_tap/>}/>
+       
       </Routes>
       <Footer />
     </main>
