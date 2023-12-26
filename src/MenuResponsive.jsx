@@ -159,7 +159,7 @@ export default function MenuResponsive(props) {
             navigate("/noticias"), setStateMenuResp(false);
           }}
         >
-            <p>Equipo</p>
+            <p>Noticias</p>
         </li>
       </ul>
     </main>

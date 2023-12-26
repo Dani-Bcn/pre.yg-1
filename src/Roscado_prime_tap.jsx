@@ -40,7 +40,7 @@ export default function Roscado_prime_tap() {
         </p>
         <div className="w-full p-5">
           <a href="https://www.precitool.be/Photos/PDF_2843/YG1_PrimeTaps_YE_PT.pdf">
-            <img src="/public/assets/portada-prime.png" alt="" width={900} />
+            <img src="/assets/portada-prime.png" alt="" width={900} />
           </a>
         </div>
       </section>
