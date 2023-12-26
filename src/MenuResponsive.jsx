@@ -38,7 +38,7 @@ export default function MenuResponsive(props) {
           Inicio
         </h2>
         <h2 className="text-2xl font-semibold text-white">YG-1</h2>
-        <nav className="flex p-2 h-60 ">
+        <nav className="flex p-2 h-52 ">
           <div className="  w-[0.5px] bg-white"></div>
           <div className="h-full justify-around px-2 text-[1.2rem] rounded-2xl text-white flex flex-col">
             <p
@@ -78,8 +78,8 @@ export default function MenuResponsive(props) {
             </p>
           </div>
         </nav>
-        <h2 className="text-2xl font-semibold text-white">Soluciones</h2>
-        <nav className="flex p-2 h-60">
+        <h2 className="text-2xl font-semibold text-white pt-5">Soluciones</h2>
+        <nav className="flex p-2 h-52">
           <div className="w-[0.5px] bg-white"></div>
           <div className="h-full justify-around px-2 text-[1.2rem] rounded-2xl text-white flex flex-col">
             <p
@@ -124,7 +124,7 @@ export default function MenuResponsive(props) {
           onClick={() => {
             navigate("/equipo"), setStateMenuResp(false);
           }}
-          className="text-2xl font-semibold text-white"
+          className="text-2xl font-semibold text-white py-5"
         >
           Equipo
         </h2>
@@ -132,7 +132,7 @@ export default function MenuResponsive(props) {
           onClick={() => {
             navigate("/noticias"), setStateMenuResp(false);
           }}
-          className="py-5 text-2xl font-semibold text-white"
+          className="py-3 text-2xl font-semibold text-white"
         >
           Noticias
         </h2>
