@@ -22,9 +22,8 @@ import Contacto from "./Home/Contacto";
 import YG_world from "./Home/YG_wold";
 import Equipo from "./Equipo/Equipo";
 import Noticias from "./Noticias";
-import Catalogo_general from "/noticias/Catalogo_general";
-import Roscado_prime_tap from "/noticias/roscado_prime_tap";
-
+import Roscado_prime_tap from "./Roscado_prime_tap";
+import Catalogo_general from "./Catalogo_general";
 
 
 function App() {
