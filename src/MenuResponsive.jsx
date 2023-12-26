@@ -26,142 +26,117 @@ export default function MenuResponsive(props) {
   return (
     <main
       id="mainMenu"
-      className="z-[50] ml-[-100vw] fixed  w-full h-full flex items-center justify-start bg-red-700/[0.8] backdrop-blur-md"
+      className="fixed z-[50] -ml-[100vw] w-screen h-screen bg-red-600"
     >
-      <ul className="p-5 gap-5 text-2xl text-white font-bold flex flex-col w-full ">
-        <li>
-          <p
-            onClick={() => {
-              navigate("/"),
-                setStateMenuResp(false),
-                setSoluciones(false),
-                setYg(false);
-            }}
-          >
-            Inicio
-          </p>
-        </li>
-        <li>
-          <p
-            onClick={() => {
-              setYg(!yg), setSoluciones(false);
-            }}
-          >
-            YG-1
-          </p>
-          <m.ul
-            className="absolute w-48 flex flex-col gap-5 -mt-32 p-5 text-[1.2rem] rounded-3xl text-red-600  bg-slate-50 ml-[200vw]"
-            animate={{
-              x: yg ? "-157vw" : 0,
-              opacity: yg ? 1 : 0,
-              transition: {
-                duration: 0.5,
-              },
-            }}
-          >
-            <li
+      <section className="mt-20 w-screen  p-5">
+        <h2
+          onClick={() => {
+            navigate("/"), setStateMenuResp(false);
+          }}
+          className="text-2xl font-semibold text-white my-5"
+        >
+          Inicio
+        </h2>
+        <h2 className="text-2xl font-semibold text-white">YG-1</h2>
+        <nav className="flex p-2 h-60 ">
+          <div className="  w-[0.5px] bg-white"></div>
+          <div className="h-full justify-around px-2 text-[1.2rem] rounded-2xl text-white flex flex-col">
+            <p
               onClick={() => {
                 navigate("/quienes_somos"), setStateMenuResp(false);
               }}
             >
-              Quienes somos
-            </li>
-            <li
+              - Quienes somos
+            </p>
+            <p
               onClick={() => {
                 navigate("/historia"), setStateMenuResp(false);
               }}
             >
-              Historia{" "}
-            </li>
-            <li
+              - Historia
+            </p>
+            <p
               onClick={() => {
                 navigate("/mision"), setStateMenuResp(false);
               }}
             >
-              Mision
-            </li>
-            <li
+              - Misión,Visión y valores
+            </p>
+            <p
               onClick={() => {
                 navigate("/yg-1-world"), setStateMenuResp(false);
               }}
             >
-              YG en el mundo
-            </li>
-            <li
+              - YG-1 en el mundo
+            </p>
+            <p
               onClick={() => {
                 navigate("/contacto"), setStateMenuResp(false);
               }}
             >
-              Contacto
-            </li>
-          </m.ul>
-        </li>
-        <li>
-          <p onClick={() => setSoluciones(!soluciones, setYg(false))}>
-            Soluciones
-          </p>
-          <m.ul
-            className="absolute   flex flex-col gap-5 -mt-52 p-5 text-[1.2rem] text-red-600 rounded-3xl bg-slate-50 ml-[200vw]"
-            animate={{
-              x: soluciones ? "-152vw" : 0,
-              opacity: soluciones ? 1 : 0,
-              transition: {
-                duration: 0.5,
-              },
-            }}
-          >
-            <li
+              - Contacto
+            </p>
+          </div>
+        </nav>
+        <h2 className="text-2xl font-semibold text-white">Soluciones</h2>
+        <nav className="flex p-2 h-60">
+          <div className="w-[0.5px] bg-white"></div>
+          <div className="h-full justify-around px-2 text-[1.2rem] rounded-2xl text-white flex flex-col">
+            <p
               onClick={() => {
                 navigate("/fresado"), setStateMenuResp(false);
               }}
+              className=""
             >
-              Fresado
-            </li>
-            <li
+              - Fresado
+            </p>
+            <p
               onClick={() => {
                 navigate("/taladrado"), setStateMenuResp(false);
               }}
             >
-              Taladrado
-            </li>
-            <li
+              - Taladrado
+            </p>
+            <p
               onClick={() => {
                 navigate("/roscado"), setStateMenuResp(false);
               }}
             >
-              Roscado
-            </li>
-            <li
+              - Roscado
+            </p>
+            <p
               onClick={() => {
                 navigate("/fijacion"), setStateMenuResp(false);
               }}
             >
-              Fijación mecánica
-            </li>
-            <li
+              - Fijación mecánica
+            </p>
+            <p
               onClick={() => {
                 navigate("/sistemas"), setStateMenuResp(false);
               }}
             >
-              Sistemas de herramientas
-            </li>
-          </m.ul>
-        </li>
-        <li
+              - Sistema de herramientas
+            </p>
+          </div>
+        </nav>
+        <h2
           onClick={() => {
             navigate("/equipo"), setStateMenuResp(false);
           }}
+          className="text-2xl font-semibold text-white"
         >
-          <p>Equipo</p>
-        </li>
-        <li
+          Equipo
+        </h2>
+        <h2
           onClick={() => {
             navigate("/noticias"), setStateMenuResp(false);
           }}
+          className="py-5 text-2xl font-semibold text-white"
         >
-            <p>Noticias</p>
-        </li>
-      </ul>
+          Noticias
+        </h2>
+      </section>
     </main>
   );
 }
