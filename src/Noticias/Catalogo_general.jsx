@@ -10,7 +10,7 @@ export default function Catalogo_general() {
           Europeo.{" "}
         </h3>
         <img
-          src="/public/assets/catalog_book_samp_210929.png"
+          src="/assets/catalog_book_samp_210929.png"
           alt="img"
           width={900}
         />

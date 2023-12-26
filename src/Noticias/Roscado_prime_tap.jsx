@@ -9,8 +9,8 @@ export default function Roscado_prime_tap() {
         </h2>
         <div className="w-20 h-1 bg-red-600"></div>
         <img
-          src="/public/assets/prime.png"
-          alt=""
+          src="/assets/prime.png"
+          alt="img"
           width={900}
           className="my-5"
         />
@@ -31,7 +31,7 @@ export default function Roscado_prime_tap() {
           usar en todo el espectro de{" "}
         </p>
 
-        <img src="/public/assets/detalles-combo.png" alt="img" width={900} />
+        <img src="/assets/detalles-combo.png" alt="img" width={900} />
         <p className="my-5 text-red-600">
           With extensive Research and Development, YG-1 delivers premium cutting
           tool solutions to every major industry in all global regions. Como te
