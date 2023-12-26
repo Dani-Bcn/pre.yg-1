@@ -85,7 +85,6 @@ export default function MenuResponsive(props) {
                 navigate("/yg-1-world"), setStateMenuResp(false);
               }}
             >YG en el mundo</li>
-            <li>Quienes somos</li>
             <li
               onClick={() => {
                 navigate("/contacto"), setStateMenuResp(false);

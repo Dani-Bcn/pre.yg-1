@@ -55,6 +55,7 @@ function App() {
         <Route path="mision" element={<Mision/>}/>
         <Route path="contacto" element={<Contacto/>}/>
         <Route path="yg-1-world" element={<YG_world/>}/>
+        
       </Routes>
       <Footer />
     </main>
