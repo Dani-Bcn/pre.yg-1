@@ -13,14 +13,10 @@ span{
 }
 #img{
     cursor: pointer;
-    scroll-snap-align: center;
-    object-fit: cover;
+    scroll-snap-align: center;     
 }
 
-
 #slider{
-    width: 100vw;
-    position: relative;
     display: flex;
     overflow: scroll;
     scroll-snap-type: x mandatory;
