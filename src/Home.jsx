@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Carousel from "./Carousel";
 import Eventos from "./Eventos";
@@ -9,7 +10,15 @@ import Fresado from "./Soluciones/Fresado";
 import { useState } from "react";
 
 export default function Home() {
- 
+  const navigate = useNavigate();
+  setTimeout(() => {
+    scrollUp();
+  }, 1);
+
+  const scrollUp = () => {
+    window.scrollTo(0, 0);
+  };
+
   const arraySoluciones = [
     { url: "assets/fresado.jpg", text: "Fresado" },
     { url: "assets/taladrado.jpg", text: "Taladrado" },
@@ -24,14 +33,19 @@ export default function Home() {
   return (
     <main>
       <Carousel />
-    
+
       <Soluciones />
       <Eventos />
       <Productos />
       <article className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600">
-        <p>Noticias +</p>
+        <p
+          onClick={() => {
+            navigate("/noticias");
+          }}
+        >
+          Noticias +
+        </p>
       </article>
-   
     </main>
   );
 }

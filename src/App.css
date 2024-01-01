@@ -11,10 +11,20 @@ span{
     font-weight: bold;
     color: rgb(197, 0, 0);
 }
-img{
+#img{
     cursor: pointer;
+    scroll-snap-align: center;
+    object-fit: cover;
 }
 
+
+#slider{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
 
 
 

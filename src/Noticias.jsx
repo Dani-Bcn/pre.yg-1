@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function () {
   const navigate = useNavigate();
+
 
   return (
     <main className="mt-24 w-screen p-5">

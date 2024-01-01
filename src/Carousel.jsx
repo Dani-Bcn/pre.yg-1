@@ -34,13 +34,14 @@ export default function Carousel() {
 
   return (
     <main id="main" className="mt-24 z-20">
-      <section className="flex w-screen h-62 overflow-auto">
+      <section id="slider" >
         {arrayCarousel.map((e, i) => {
           console.log(e.url);
           return (
             <section key={e.url} className="flex h-60 justify-center items-center">
-              <div              
-              className=" z-20 w-screen h-60 "
+              <div    
+              id="img"          
+              className=" z-20 w-screen h-60 sticky object-cover scroll-snap-aling "
                style={{background:`url(${e.url})`,
                backgroundPosition:"center",
                backgroundSize:"cover",
