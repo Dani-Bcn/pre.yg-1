@@ -28,7 +28,7 @@ import Catalogo_general from "./Catalogo_general";
 
 function App() {
   const openMenuResp = () => {
-    console.log(stateMenuResp);
+   
   };
   const [stateMenuResp, setStateMenuResp] = useState(false);
   const location = useLocation();

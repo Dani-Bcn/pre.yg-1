@@ -33,7 +33,18 @@ export default function Carousel() {
   ];
 
   const [positionX, setPositionX] = useState(0);
-  console.log(positionX);
+
+  const funcCoco=(()=>{
+    console.log("coco")
+    setPositionX(positionX -390)
+  
+  })
+ 
+const interval = setInterval(()=>{
+ funcCoco()
+},5000)
+ 
+
 
   positionX < -1560 ? setPositionX(0) : null;
   positionX  === 390 ? setPositionX(0) : null;
@@ -41,22 +52,11 @@ export default function Carousel() {
     <main id="main" className="mt-24 z-20">
       <section id="slider">
      
-          <button
-            onClick={() => setPositionX(positionX + 390)}
-            className=" absolute z-50  text-5xl text-white mt-24"
-          >
-            ⬅️
-          </button>
-          <button
-            onClick={() => setPositionX(positionX + -390)}
-            className="absolute  z-50  text-5xl text-white ml-80 mt-24"
-          >
-            ➡️
-          </button>
+         
       
 
         {arrayCarousel.map((e, i) => {
-          console.log(e.url);
+         
           return (
             <section
               key={e.url}
@@ -65,6 +65,9 @@ export default function Carousel() {
               <m.div
                 animate={{
                   x: positionX,
+                  transition:{
+                    duration:1
+                  }
                 }}
                 id="img"
                 className=" z-20 w-screen h-60  "
