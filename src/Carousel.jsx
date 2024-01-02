@@ -6,7 +6,7 @@ import Slider from "infinite-react-carousel";
 
 export default function Carousel() {
 
-  console.log(Slider)
+
   const arrayCarousel = [
     {
       url: "assets/video.jpg",
@@ -40,17 +40,17 @@ export default function Carousel() {
 
   return (
     <main id="main" className="mt-24 z-20">
-      <Slider autoplay={true} className="h-42 ">
+      <Slider autoplay={true} pauseOnHover={false} className="h-42 ">
         {arrayCarousel.map((e, i) => {     
           return (   
-            <div className="h-52 flex items-center justify-center">                     
+            <div key={i} className="h-52 flex items-center justify-center">                     
               <img              
                 className="w-[150vw] -mt-20 h-[32vh] object-cover"                
                 key={i}
                 src={e.url}
                 alt="coco"
               />    
-              <h3 className="-mt-40 z-50 text-slate-300 font-bold text-center text-3xl">{e.text}</h3>        
+              <h3 className="-mt-40 z-50 text-slate-50 font-bold text-center text-3xl">{e.text}</h3>        
               </div>
           );
         })}
