@@ -44,12 +44,12 @@ export default function Carousel() {
         {arrayCarousel.map((e, i) => {     
           return (   
             <div key={i} className="h-52 flex items-center justify-center">                     
-              <img              
+             
+             <img              
                 className="w-[150vw] -mt-20 h-[32vh] object-cover"                
                 key={i}
                 src={e.url}
-                alt="coco"
-              />    
+                alt="coco" />    
               <h3 className="-mt-40 z-50 text-slate-50 font-bold text-center text-3xl">{e.text}</h3>        
               </div>
           );
