@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Equipo() {
+  window.scrollTo(0,0)
   const arrayEquipo = [
     {
       img: "/assets/jorge.png",
@@ -52,11 +53,11 @@ export default function Equipo() {
       <div className="-mt-5 -ml-48 w-16 h-1 bg-red-600"></div>
       {arrayEquipo.map((e, i) => {
         return (
-          <article key={i} className="my-5">
+          <article key={i} className="my-10">
             <img src={e.img} alt="img" width={600} />
-            <div className=" text-start w-full flex flex-col justify-center items-center">
+            <div className=" text-start w-full flex flex-col items-center">
               <div>
-                <h2 className="text-[1.8rem] font-semibold ">{e.name}</h2>
+                <h2 className="text-red-500  text-[1.8rem] font-bold ">{e.name}</h2>
                 <p className="text-[1.4rem]">{e.text}</p>
                 <a href={e.link}>
                   <p className="text-[1.4rem] underline">{e.textLink}</p>

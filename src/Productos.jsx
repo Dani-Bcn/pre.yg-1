@@ -8,18 +8,9 @@ export default function Productos() {
         <div className="mb-5 text-[1.3rem]" >
           Lanzamiento de los nuevos machos HSS-PM de alto rendimiento PRIME TAPS
         </div>
-        <div 
+       <img src="/public/assets/prime.webp" alt="prime" 
+       className="h-52 object-cover " />
       
-        className="w-[90vw] h-72 "
-        style={{background:`url(assets/prime.png)`,
-        backgroundPositionY:-75,
-        backgroundSize:350,
-        backgroundRepeat:"no-repeat",
-        display:"flex",
-        alignItems:"center",
-        justifyContent:"center"
-        }}
-        />
       
       </section>
     </main>
