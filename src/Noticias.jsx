@@ -11,7 +11,7 @@ export default function () {
       <div className="w-32 h-1 bg-red-600"></div>
       <img
         onClick={() => navigate("roscado")}
-        src="/assets/prime.png"
+        src="/assets/prime.webp"
         alt="img"
         width={900}
         className="my-5"
