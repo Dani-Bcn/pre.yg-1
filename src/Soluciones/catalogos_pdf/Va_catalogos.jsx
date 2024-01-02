@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Va_catalogos() {
+  window.scrollTo(0, 0)
   const arrayGsCatalog = [
     {
       title: "TITANOX POWER",

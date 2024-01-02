@@ -10,6 +10,9 @@ import Fresado from "./Soluciones/Fresado";
 import { useState } from "react";
 
 export default function Home() {
+
+  window.scrollTo(0, 0)
+  
   const navigate = useNavigate();
   setTimeout(() => {
     scrollUp();
@@ -37,14 +40,13 @@ export default function Home() {
       <Soluciones />
       <Eventos />
       <Productos />
-      <article className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600">
-        <p
-          onClick={() => {
-            navigate("/noticias");
-          }}
-        >
-          Noticias +
-        </p>
+      <article
+        onClick={() => {
+          navigate("/noticias");
+        }}
+        className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600"
+      >
+        <p>Noticias +</p>
       </article>
     </main>
   );

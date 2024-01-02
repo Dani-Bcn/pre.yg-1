@@ -11,16 +11,11 @@ span{
     font-weight: bold;
     color: rgb(197, 0, 0);
 }
-#img{
+img{
     cursor: pointer;
-    scroll-snap-align: center;     
+     
 }
 
-#slider{
-    display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
-}
 
 
 

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Soluciones() {
   const navigate = useNavigate();
+
+
+
+
 
   const arraySoluciones = [
     { url: "assets/fresado.jpg", text: "Fresado", link: "fresado" },
@@ -22,7 +26,7 @@ export default function Soluciones() {
 
   return (
     <main>
-      <section className="m-auto mt-14 w-full h-full flex flex-col">
+      <section className="m-auto mt-10  w-full h-full flex flex-col">
         <h2 className=" py-2 px-7 text-3xl">Soluciones</h2>
         <div className="mx-7 w-12 h-[2px]  -mt-2 mb-2 bg-red-700"></div>
         <article className="w-full flex flex-wrap  justify-center">
@@ -42,7 +46,7 @@ export default function Soluciones() {
           })}
         </article>
       </section>
-      <section className="py-14 bg-gradient-to-b from-gray-200 to-slate-50 flex mt-20 w-screen h-62 overflow-auto">
+      <section className="py-14 bg-gradient-to-b from-gray-200 to-slate-50 flex  w-screen h-62 overflow-auto">
         <article className="flex flex-col justify-center items-center">
           <img
             src="assets/matrices_moldes.png"

@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function () {
+  window.scrollTo(0, 0)
   return (
     <main className="h-[700px]" >
       <section className="mt-10 w-[90vw] m-auto  h-72 flex flex-col">

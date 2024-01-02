@@ -2,59 +2,59 @@ import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { motion as m } from "framer-motion";
 import ReactPlayer from "react-player";
-import Slider from "infinite-react-carousel";
 
 export default function Carousel() {
-
-
   const arrayCarousel = [
     {
-      url: "assets/video.jpg",
+      url: "assets/video.webp",
       text: "Una nueva era ha empezado",
       titleSoluciones: "Fresado",
     },
 
     {
-      url: "assets/02.png",
+      url: "assets/02.webp",
       text: "YG-1 Cutting Tools | [Mandrinos] Portaherramientas hidráulicos Power E-Hydro",
       titleSoluciones: "Taladro",
     },
     {
-      url: "assets/prime.png",
+      url: "assets/prime.webp",
       text: "YG-1 Cutting Tools | [Roscado] Machos de roscar Prime Taps",
       titleSoluciones: "Roscado",
     },
     {
-      url: "assets/4-dream-drill-pro.jpg",
+      url: "assets/4-dream-drill-pro.webp",
       text: "YG-1 Cutting Tools | [Taladrado]  Dream Drill pro para aceros y fundición",
       titleSoluciones: "Fijación mecánica",
     },
     {
-      url: "assets/yg-1-nanocut.jpg",
+      url: "assets/yg-1-nanocut.webp",
       text: "YG-1 Cutting Tools | [Torneado] Programa de mandrinado NanoCut",
       titleSoluciones: "Sistemas de herramientas",
     },
-  ];  
-   
-  const [positionX, setPositionX] = useState(0);
+  ];
+
+  const [count, setCount] = useState(0);
+
+  const slider = () => {
+    setCount(count + 1);
+    clearInterval(interval)
+    count === 4 ? setCount(0):null
+  };
+
+  const interval = setInterval(() => slider(), 3000);
 
   return (
     <main id="main" className="mt-24 z-20">
-      <Slider autoplay={true} pauseOnHover={false} className="h-42 ">
-        {arrayCarousel.map((e, i) => {     
-          return (   
-            <div key={i} className="h-52 flex items-center justify-center">                     
-             
-             <img              
-                className="w-[150vw] -mt-20 h-[32vh] object-cover"                
-                key={i}
-                src={e.url}
-                alt="coco" />    
-              <h3 className="-mt-40 z-50 text-slate-50 font-bold text-center text-3xl">{e.text}</h3>        
-              </div>
-          );
-        })}
-      </Slider>
+      <div className="w-screen h-48 bg-red-500 flex justify-center items-center ">
+        <img
+          src={arrayCarousel[count].url}
+          alt=""
+          className="w-screen  h-48 object-cover brightness-[50%]"
+        />
+        <h3 className="absolute px-5 text-3xl text-center text-white font-bold ">
+          {arrayCarousel[count].text}
+        </h3>
+      </div>
     </main>
   );
 }

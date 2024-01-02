@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function YG_world() {
+  window.scrollTo(0, 0);
   return (
     <main className="pt-24">
       <section className=" bg-red-200 m-5 p-5 rounded-t-full flex flex-col">
@@ -8,8 +9,8 @@ export default function YG_world() {
           <div className="w-full flex flex-col items-center">
             <h2 className="text-3xl  font-semibold">YG-1 en el mundo</h2>
             <div className="w-12 h-1 -ml-48 bg-red-700"></div>
-          </div>          
-          <h3 className="text-red-600 font-semibold  text-2xl py-5">           
+          </div>
+          <h3 className="text-red-600 font-semibold  text-2xl py-5">
             HEADQUARTERS
           </h3>
           <p className="font-bold text-[1.2rem]"> YG-1 HEADQUARTERS </p>

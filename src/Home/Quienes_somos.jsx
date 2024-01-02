@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Quienes_somos() {
+  window.scrollTo(0, 0)
   return (
     <main className="w-screen flex flex-col mt-24">
       <h1 className="p-5 text-3xl font-bold">Quienes somos</h1>

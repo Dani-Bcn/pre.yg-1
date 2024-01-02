@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Fresado() {
+  window.scrollTo(0, 0)
+  window.scrollTo(0, 0)
   const navigate = useNavigate()
   const arrayMilling = [
     { img: "assets/gs.png", text: "Aceros de fácil mecanización Rm<850N/mm²",link:"gs_catalogos" },
