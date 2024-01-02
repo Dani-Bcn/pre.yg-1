@@ -8,11 +8,11 @@ export default function Roscado_prime_tap() {
           ROSCADO DE YG-1 DE ALTO RENDIMENTO{" "}
         </h2>
         <div className="w-20 h-1 bg-red-600"></div>
-        <img
+        <img className="w-screen object-cover h-60 py-5"
           src="/assets/prime.webp"
           alt="img"
-          width={900}
-          className="my-5"
+        
+      
         />
         <h3 className="text-2xl font-semibold">
           Lanzamiento de los nuevos machos HSS-PM de alto rendimiento PRIME TAPS
