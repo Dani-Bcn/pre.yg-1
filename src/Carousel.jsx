@@ -34,7 +34,7 @@ export default function Carousel() {
       text: "YG-1 Cutting Tools | [Torneado] Programa de mandrinado NanoCut",
       titleSoluciones: "Sistemas de herramientas",
     },
-  ];
+  ]; 
 
   const [positionX, setPositionX] = useState(0);
 
