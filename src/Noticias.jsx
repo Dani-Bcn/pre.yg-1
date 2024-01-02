@@ -14,7 +14,7 @@ export default function () {
         src="/assets/prime.webp"
         alt="img"
         width={900}
-        className="my-5"
+        className="my-5 object-cover h-52"
       />
       <h3 className="text-2xl text-red-600 font-semibold">
         ROSCADO DE YG-1 DE ALTO RENDIMIENTO
