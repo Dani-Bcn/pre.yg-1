@@ -13,9 +13,13 @@ export default function Navbar(props) {
         rotation: 45,
         backgroundColor: "white",
       });
+      gsap.to("#cnt",{
+        height:1
+      })
 
       gsap.to("#stick1", {
-        x: 200,
+        visibility:"hidden",
+      
       });
       gsap.to("#stick2", {
         rotation: -45,
@@ -27,6 +31,10 @@ export default function Navbar(props) {
         ease: "circ.out(1.7)",
       });
     } else {
+      gsap.to("#cnt",{
+        height:"50px"
+      })
+
       gsap.to("#cnt", {
         gap: 6,
         ease: "circ.out(1.7)",
@@ -37,7 +45,7 @@ export default function Navbar(props) {
       });
 
       gsap.to("#stick1", {
-        x: 0,
+        visibility:"visible",
       });
       gsap.to("#stick2", {
         rotation: 0,
