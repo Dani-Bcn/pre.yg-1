@@ -1,8 +1,12 @@
 import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { motion as m } from "framer-motion";
+import ReactPlayer from "react-player";
+import Slider from "infinite-react-carousel";
 
 export default function Carousel() {
+
+  console.log(Slider)
   const arrayCarousel = [
     {
       url: "assets/video.jpg",
@@ -34,58 +38,23 @@ export default function Carousel() {
 
   const [positionX, setPositionX] = useState(0);
 
-  const funcCoco=(()=>{
-    console.log("coco")
-    setPositionX(positionX -390)
-  
-  })
- 
-const interval = setInterval(()=>{
- funcCoco()
-},5000)
- 
-
-
-  positionX < -1560 ? setPositionX(0) : null;
-  positionX  === 390 ? setPositionX(0) : null;
   return (
     <main id="main" className="mt-24 z-20">
-      <section id="slider">
-     
-         
-      
-
-        {arrayCarousel.map((e, i) => {
-         
-          return (
-            <section
-              key={e.url}
-              className="flex h-60 justify-center items-center"
-            >
-              <m.div
-                animate={{
-                  x: positionX,
-                  transition:{
-                    duration:1
-                  }
-                }}
-                id="img"
-                className=" z-20 w-screen h-60  "
-                style={{
-                  background: `url(${e.url})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                  display: "flex",
-                }}
-              >
-                <p className="z-20 h-60 backdrop-brightness-50 text-white text-center font-bold justify-center items-center  text-3xl flex  ">
-                  {e.text}
-                </p>
-              </m.div>
-            </section>
+      <Slider autoplay={true} className="h-42 ">
+        {arrayCarousel.map((e, i) => {     
+          return (   
+            <div className="h-52 flex items-center justify-center">                     
+              <img              
+                className="w-[150vw] -mt-20 h-[32vh] object-cover"                
+                key={i}
+                src={e.url}
+                alt="coco"
+              />    
+              <h3 className="-mt-40 z-50 text-slate-300 font-bold text-center text-3xl">{e.text}</h3>        
+              </div>
           );
         })}
-      </section>
+      </Slider>
     </main>
   );
 }
