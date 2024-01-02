@@ -19,30 +19,30 @@ export default function Footer() {
         <article className="flex w-[80vw] pt-5 justify-between items-center">
           <a href="https://www.facebook.com/yg1worldwide/" target="_blank">
          
-            <img src="social/facebook.png" alt="img" className="w-6 h-5 object-cover" />
+            <img src="social/facebook.png" alt="img" className="w-6 h-5" />
           </a>
           <a
             href="https://www.instagram.com/yg1cuttingtools_official/"
             target="_blank"
           >
-            <img src="social/insta.png" alt="img" className="w-6 h-5  object-cover" />
+            <img src="social/insta.png" alt="img" className="w-6 h-5" />
           </a>
           <a
             href="https://www.youtube.com/channel/UC4Dd_1ECGroDnr3DQ-c5iKQ"
             target="_blank"
           >
            
-            <img src="social/youtube.png" alt="img" className="w-6 h-5  object-cover" />
+            <img src="social/youtube.png" alt="img" className="w-6 h-5" />
           </a>
           <a
             href="https://www.linkedin.com/company/yg-1-co--ltd-%EC%A3%BC-%EC%99%80%EC%9D%B4%EC%A7%80-%EC%9B%90/?originalSubdomain=kr"
             target="_blank"
           >
            
-            <img src="social/linkedin.png" alt="img" className="w-6 h-5  object-cover" />
+            <img src="social/linkedin.png" alt="img" className="w-6 h-5" />
           </a>
           <a href="https://twitter.com/YG1worldwide" target="_blank">
-            <img src="social/twiter.png" alt="img" className="w-6 h-5  object-cover" />
+            <img src="social/twiter.png" alt="img" className="w-6 h-5" />
           </a>
         </article>
         <article className="w-[90vw] flex justify-between items-center">
