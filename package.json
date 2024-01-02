@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-router": "^5.1.20",
     "framer-motion": "^10.16.16",
     "gsap": "^3.12.4",
     "infinite-react-carousel": "^1.2.11",
