@@ -9,7 +9,7 @@ export default function Roscado_prime_tap() {
         </h2>
         <div className="w-20 h-1 bg-red-600"></div>
         <img
-          src="/assets/prime.png"
+          src="/assets/prime.webp"
           alt="img"
           width={900}
           className="my-5"
