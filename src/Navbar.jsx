@@ -62,9 +62,9 @@ export default function Navbar(props) {
         onClick={() => setStateMenuResp(!stateMenuResp)}
         className="ml-5 z-50 flex flex-col gap-4 w-20 h-20 items-center justify-center"
       >
-        <div id="stick" className="w-6 h-[2px] bg-red-600 "></div>
-        <div id="stick1" className="w-6 h-[2px] bg-red-600 "></div>
-        <div id="stick2" className="w-6 h-[2px] bg-red-600 "></div>
+        <div id="stick" className="w-8 h-[3px] bg-red-600 "></div>
+        <div id="stick1" className="w-8 h-[3px] bg-red-600 "></div>
+        <div id="stick2" className="w-8 h-[3px] bg-red-600 "></div>
       </section>
     </main>
   );
