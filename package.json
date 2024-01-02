@@ -19,6 +19,11 @@
     "react-player": "^2.14.1",
     "react-router-dom": "^6.21.1"
   },
+  "production": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.18",
