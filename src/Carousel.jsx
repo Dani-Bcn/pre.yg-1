@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { motion as m } from "framer-motion";
 import ReactPlayer from "react-player";
-/* import Slider from "infinite-react-carousel"; */
+import Slider from "infinite-react-carousel";
 
 export default function Carousel() {
 
@@ -40,7 +40,7 @@ export default function Carousel() {
 
   return (
     <main id="main" className="mt-24 z-20">
-     
+      <Slider autoplay={true} pauseOnHover={false} className="h-42 ">
         {arrayCarousel.map((e, i) => {     
           return (   
             <div key={i} className="h-52 flex items-center justify-center">                     
@@ -54,7 +54,7 @@ export default function Carousel() {
               </div>
           );
         })}
-    
+      </Slider>
     </main>
   );
 }
