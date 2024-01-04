@@ -1,29 +1,10 @@
 import React, { useEffect, useState } from "react";
 
+
 export default function Contacto() {
-  const dataForm = {
-    username: "",
-    surname: "",
-    email: "",
-    tel: "",
-    fall: "",
-    message: "",
-  };
 
-  const [valuesForm, setValuesForm] = useState(dataForm);
-
-
-
-  const handleChange = (name, values) => {
-    setValuesForm((iniValues) => {
-      return {
-        ...iniValues,
-        [name]: values,
-      };
-    });
-  };
-
-  console.log(valuesForm)
+ 
+console.log(objectSend)
 
   return (
     <main className="pt-24  md:h-screen">
@@ -35,14 +16,15 @@ export default function Contacto() {
           className=" h-60 my-10 lg:h-72"
         />
       </section>
-      <form className="w-[90vw] m-auto flex flex-col justify-center items-center">
+      <form action="https://formsubmit.co/nneodani@gmail.com" method="POST" className="w-[90vw] m-auto flex flex-col justify-center items-center">
         <div className="p-10 border border-indigo-300">
           <label>Nombre</label>
           <br />
           <input
             type="text"
             name="username"
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+           
           />
           <br />
           <label>Apellido</label>
@@ -51,7 +33,8 @@ export default function Contacto() {
             type="text"
             name="surname"
             id=""
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+           
           />
           <br />
           <label>E-mail</label>
@@ -60,7 +43,8 @@ export default function Contacto() {
             type="email"
             name="email"
             id=""
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+           
           />
           <br />
           <label>Teléfono</label>
@@ -69,7 +53,8 @@ export default function Contacto() {
             type="tel"
             name="tel"
             id=""
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+          
           />
           <br />
           <label>Asunto</label>
@@ -78,18 +63,21 @@ export default function Contacto() {
             type="text"
             name="fall"
             id=""
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+           
           />
           <br />
           <label>Mensaje</label>
           <br />
-          <input
+          <textarea
             type="text"
             name="message"
             id=""
-            onChange={(e) => handleChange(e.target.name, e.target.value)}
+            required
+           
           />
         </div>
+        <button type="submit" className="border border-indigo-500 m-5 py-1 px-5">Enviar</button>
       </form>
     </main>
   );

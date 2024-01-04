@@ -84,7 +84,7 @@ export default function Carousel() {
           </svg>
         </button>
         {video ? (
-          <div className="fixed mt-[60vh] h-[150vh] bg-slate-800 backdrop-blur-xl flex flex-col justify-center items-center">
+          <div className="fixed mt-[40vh] h-[150vh] bg-slate-800 backdrop-blur-xl flex flex-col justify-center items-center">
             <button
               onClick={() => setVideo(false)}
               className="ml-80 p-10"
