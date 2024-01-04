@@ -24,6 +24,8 @@ import Equipo from "./Equipo/Equipo";
 import Noticias from "./Noticias";
 import Roscado_prime_tap from "./Roscado_prime_tap";
 import Catalogo_general from "./Catalogo_general";
+import Política from "./Legalidad/Política";
+import Videos from "./Videos";
 
 
 function App() {
@@ -64,6 +66,8 @@ function App() {
         <Route path="noticias" element={<Noticias/>}/>
         <Route path="noticias/roscado" element={<Roscado_prime_tap/>}/>
         <Route path="noticias/catalogo" element={<Catalogo_general/>}/>
+        <Route path="/politica" element={<Política/>}/>
+        <Route path="/videos" element={<Videos/>}/>
        
       </Routes>
       <Footer />

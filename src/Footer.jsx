@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 export default function Footer() {
+  const navigate= useNavigate()
   return (
     <main className="w-screen m-auto h-60 text-white bg-black flex justify-center items-center">
       <section className="w-[80vw] h-40 p-5 flex justify-center flex-col items-center">
@@ -18,7 +20,6 @@ export default function Footer() {
         </article>
         <article className="flex w-[80vw] pt-5 justify-between items-center">
           <a href="https://www.facebook.com/yg1worldwide/" target="_blank">
-         
             <img src="social/facebook.png" alt="img" className="w-6 h-5" />
           </a>
           <a
@@ -31,29 +32,24 @@ export default function Footer() {
             href="https://www.youtube.com/channel/UC4Dd_1ECGroDnr3DQ-c5iKQ"
             target="_blank"
           >
-           
             <img src="social/youtube.png" alt="img" className="w-6 h-5" />
           </a>
           <a
             href="https://www.linkedin.com/company/yg-1-co--ltd-%EC%A3%BC-%EC%99%80%EC%9D%B4%EC%A7%80-%EC%9B%90/?originalSubdomain=kr"
             target="_blank"
           >
-           
             <img src="social/linkedin.png" alt="img" className="w-6 h-5" />
           </a>
           <a href="https://twitter.com/YG1worldwide" target="_blank">
             <img src="social/twiter.png" alt="img" className="w-6 h-5" />
           </a>
         </article>
-        <article className="w-[90vw] flex justify-between items-center">
-          <a
-            href=""
-            className="text-center mt-10 mx-3 w-full flex  justify-between"
-          >
-            <p className="w-72 text-[0.9rem]">Política de privacidad</p>
-            <p className="w-52 text-[0.9rem]">Aviso legal</p>
-            <p className="w-52 text-[0.9rem]">Cookies</p>
-          </a>
+        <article className="w-[80vw] h-5 flex my-5 justify-between ">
+         
+           <p  onClick={()=> navigate("/politica") }className="  text-[0.9rem]">Política de privacidad</p>
+            <p className=" text-[0.9rem]">Aviso legal</p>
+            <p className=" text-[0.9rem]">Cookies</p>
+       
         </article>
       </section>
     </main>
