@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Política() {
+  window.scroll(0,0)
   return (
     <div className="w-[90vw] m-auto flex flex-col mt-24">
       <h1 className="text-2xl ">Política de privacidad</h1>
