@@ -23,11 +23,41 @@ export default function Contacto() {
         >
           <div className="w-full flex flex-wrap gap-5 items-center ">
             <input type="text" name="username" placeholder="Nombre" required />
-            <input type="text" name="surname" id="" placeholder="Apellido" required />
-            <input type="email" name="email" id="" placeholder="E-mail" required />
-            <input type="tel" name="tel" id="" placeholder="Teléfono" required />           
-            <textarea className="w-full h-40 border-2 border-blue-400/[0.5] p-2 " type="text" name="message" id="" placeholder="Mensaje" required />
+            <input
+              type="text"
+              name="surname"
+              id=""
+              placeholder="Apellido"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="E-mail"
+              required
+            />
+            <input
+              type="tel"
+              name="tel"
+              id=""
+              placeholder="Teléfono"
+              required
+            />
+            <textarea
+              className="w-full h-40 border-2 border-blue-400/[0.5] p-2 "
+              type="text"
+              name="message"
+              id=""
+              placeholder="Mensaje"
+              required
+            />
           </div>
+          <div className=" w-[95vw] h-20  mb-10 flex p-5 gap-2 items-center">
+            <input className="w-10 h-5" type="checkbox" />
+            <p className="w-96 h-10">He leido y acepto la política de privacidad</p>
+          </div>
+
           <button
             type="submit"
             className="border border-blue-500 m-5 py-1 px-5 "
