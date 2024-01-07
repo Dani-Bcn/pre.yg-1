@@ -26,6 +26,7 @@ import Roscado_prime_tap from "./Roscado_prime_tap";
 import Catalogo_general from "./Catalogo_general";
 import Política from "./Legalidad/Política";
 import Videos from "./Videos";
+import Pop_up_cookies from "./Soluciones/Pop_up_cookies";
 
 function App() {
   const openMenuResp = () => {};
@@ -44,6 +45,7 @@ function App() {
         stateMenuResp={stateMenuResp}
         setStateMenuResp={setStateMenuResp}
       />
+      <Pop_up_cookies/>
 
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />

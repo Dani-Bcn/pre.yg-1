@@ -114,7 +114,7 @@ console.log(stateMenuResp)
             className="absolute p-5 mt-10  rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex  flex-col justify-start"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
-            <li id="yg" onClick={() => navigate("/quienes_somos")}>
+            <li id="yg" onClick={() => navigate("/equipo")}>
               Equipo
             </li>
             <li id="yg" onClick={() => navigate("/quienes_somos")}>

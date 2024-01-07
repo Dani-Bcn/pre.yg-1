@@ -66,7 +66,7 @@ export default function Carousel() {
          onClick={() => {
           setVideo(true), setNumVideo(count);
         }}
-          className=" transition-all duration-500 font-bold text-[1.5em] absolute text-white hover:text-red-600 hover:bg-white flex justify-center w-52 h-10  rounded-[10px] mt-80  bg-red-500/[0.5] backdrop-blur-sm"
+          className=" transition-all portrait:hidden duration-500 text-[1.5em] absolute text-white hover:text-red-600 hover:bg-white flex justify-center w-52 h-10  rounded-[10px] mt-80  bg-red-500/[0.5] backdrop-blur-sm"
         >Ver video</button>
         <button
 
@@ -90,7 +90,7 @@ export default function Carousel() {
           </svg>
         </button>
         {video ? (
-          <div className="fixed mt-[40vh] h-[150vh] bg-slate-800 backdrop-blur-xl flex flex-col justify-center items-center">
+          <div className="fixed mt-[40vh] md:mt-24 w-screen h-[150vh] bg-slate-800 backdrop-blur-xl flex flex-col justify-center items-center">
             <button
               onClick={() => setVideo(false)}
               className="ml-80 p-10"
@@ -113,7 +113,7 @@ export default function Carousel() {
             </button>
             <ReactPlayer
               id="md-movie"
-              className=" bg-slate-800 backdrop-blur-md "
+              className=" bg-slate-800 backdrop-blur-md md:w-96 "
               url={arrayCarousel[numVideo].video}
               width={400}
               height={300}
