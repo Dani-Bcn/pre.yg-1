@@ -52,7 +52,7 @@ export default function Carousel() {
   const interval = setInterval(() => slider(), 3000);
 
   return (
-    <main id="main" className="mt-24 md:mt-52">
+    <main id="main" className="mt-24 landscape:mt-32 ">
       <div className="w-screen h-48 bg-red-500 flex justify-center items-center ">
         <img
           src={arrayCarousel[count].img}
@@ -62,7 +62,6 @@ export default function Carousel() {
         <h3 className="absolute px-5 text-3xl text-center text-white font-bold ">
           {arrayCarousel[count].text}
         </h3>
-
         <button
           onClick={() => {
             setVideo(true), setNumVideo(count);

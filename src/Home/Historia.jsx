@@ -203,7 +203,7 @@ export default function Historia() {
   ];
 
   return (
-    <main className="mt-24">
+    <main className="mt-24 w-[90vw] m-auto">
       <section className="pt-5 md:px-20">
         <h2 className=" text-red-600 font-bold text-4xl py-3">Historia YG-1</h2>
         {arrayHistory.map((e, i) => {
