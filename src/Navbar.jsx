@@ -55,14 +55,13 @@ console.log(stateMenuResp)
   }, [stateMenuResp]);
   stateYg
     ? gsap.to("#yg", {
-        marginTop: 0,
+     
         opacity: 1,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         duration: 0.3,
         ease: "none",
       })
-    : gsap.to("#yg", {
-        marginTop: -20,
+    : gsap.to("#yg", {     
         opacity: 0,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
         duration: 0.3,
@@ -70,14 +69,14 @@ console.log(stateMenuResp)
       });
       stateSoluciones
       ? gsap.to("#soluciones", {
-          marginTop: 0,
+      
           opacity: 1,
           clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
           duration: 0.3,
           ease: "none",
         })
       : gsap.to("#soluciones", {
-          marginTop: -20,
+        
        opacity:0,
           clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
           duration: 0.3,
@@ -88,10 +87,10 @@ console.log(stateMenuResp)
     <main className="z-[150] fixed w-full h-[55px] md:h-10  mt-10 flex items-center justify-between  bg-white/[0.5] backdrop-blur-md ">
       <img
         onClick={() => navigate("/")}
-        src="assets/descarga.png"
+        src="assets/logo-red.png"
         width={125}
         alt="img"
-        className="md:ml-20"
+        className="md:ml-20 p-2"
       />
       <section
         id="cnt"
@@ -103,16 +102,16 @@ console.log(stateMenuResp)
         <div id="stick2" className="w-8 h-[3px] bg-red-600 "></div>
       </section>
       <section className="w-[65vw] portrait:hidden h-20  flex justify-between items-center">
-        <h3 className="cursor-pointer w-40  hover:text-red-600 font-semibold " onClick={()=>navigate("/")}>Inicio</h3>
+        <h3 className="cursor-pointer w-40 text-black  hover:text-white font-semibold hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 " onClick={()=>navigate("/")}>Inicio</h3>
         <nav
-          className="z-50 h-5 cursor-pointer w-40"
+          className="z-50 h-10 flex cursor-pointer w-40"
           onMouseOver={() => setStateYg(true)}
           onMouseOut={() => setStateYg(false)}
         >
-          <h3 className="w-40 h-10 hover:text-red-600 font-semibold ">YG 1</h3>
+          <h3 className="w-40 text-black  hover:text-white hover:bg-red-600 font-semibold bg-white/[0]    flex items-center justify-center transition-all duration-500 ">YG 1</h3>
           <ul
             id="yg"
-            className="absolute p-5  rounded-xl opacity-0 text-red-200 bg-slate-950/[0.6] -mt-6 w-60 h-46 flex flex-col justify-start"
+            className="absolute p-5 mt-10  rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex  flex-col justify-start"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
             <li id="yg" onClick={() => navigate("/quienes_somos")}>
@@ -136,14 +135,14 @@ console.log(stateMenuResp)
           </ul>
         </nav>
         <nav
-          className=" z-[150] h-5 cursor-pointer w-40   "
+          className="z-50 h-10 flex cursor-pointer w-40"
           onMouseOver={() => setStateSoluciones(true)}
           onMouseOut={() => setStateSoluciones(false)}
         >
-          <h3 className="w-60 h-10 hover:text-red-600 font-semibold  ">Soluciones</h3>
+          <h3 className="w-40 text-black  hover:text-white transition-all duration-150 font-semibold hover:bg-red-600    flex items-center justify-center ">Soluciones</h3>
           <ul
             id="soluciones"
-            className="absolute p-5  rounded-xl opacity-0 text-red-200 bg-slate-950/[0.6] -mt-6 w-60 h-40 flex flex-col justify-start"
+            className="absolute p-5  mt-10 rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex flex-col justify-start"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
             <li  id="soluciones" onClick={() => navigate("/quienes_somos")}>
@@ -163,7 +162,7 @@ console.log(stateMenuResp)
             </li>
           </ul>
         </nav>
-        <h3 className="cursor-pointer  font-semibold text-white hover:bg-red-200 transition-all duration-50  hover:text-red-600 m-6 p-2">Actualidad</h3>
+        <h3 className="cursor-pointer  font-semibold text-black  hover:text-white  hover:bg-red-600 transition-all duration-150 m-6 p-2">Actualidad</h3>
       </section>
     </main>
   );

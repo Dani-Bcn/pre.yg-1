@@ -63,10 +63,17 @@ export default function Carousel() {
           {arrayCarousel[count].text}
         </h3>
         <button
+         onClick={() => {
+          setVideo(true), setNumVideo(count);
+        }}
+          className=" transition-all duration-500 font-bold text-[1.5em] absolute text-white hover:text-red-600 hover:bg-white flex justify-center w-52 h-10  rounded-[10px] mt-80  bg-red-500/[0.5] backdrop-blur-sm"
+        >Ver video</button>
+        <button
+
           onClick={() => {
             setVideo(true), setNumVideo(count);
           }}
-          className="absolute flex justify-center items-center w-16 h-16 rounded-[100px] mt-48 ml-80 bg-slate-50/[0.5] backdrop-blur-sm"
+          className="absolute landscape:hidden flex justify-center items-center w-16 h-16 rounded-[100px] mt-48 ml-80 bg-slate-50/[0.5] backdrop-blur-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

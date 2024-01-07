@@ -22,10 +22,6 @@ input{
     padding: 10px;
     
 }
-
-#Yg{
-    backdrop-filter: blur(30px);
-}
 #mainMenu{
     margin-left: -100vw;
 }
