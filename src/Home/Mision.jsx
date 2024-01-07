@@ -5,19 +5,17 @@ export default function Mision() {
     <main className="mt-24">
       <section className="px-5">
         <h2 className="text-3xl text-red-600 py-5">YG-1 Sprint</h2>
-        <p >
-          YG-1 values talented individuals with creative and thoughtful minds.
-          Respecting all members of the company and constantly investing in each
-          person to develop more talent. Moreover, with bona fide business
-          management we strive to become a firm & established company possessing
-          unlimited growth potential and support to the human society.
+        <p>
+          YG-1 valora a las personas talentosas con mentes creativas y
+          reflexivas. Respetando a todos los miembros de la empresa e
+          invirtiendo constantemente en cada persona para desarrollar más
+          talento. Además, con una gestión empresarial genuina nos esforzamos
+          por convertirnos en una empresa firme y establecida que posea un
+          potencial de crecimiento ilimitado y apoyo a la sociedad humana.
         </p>
       </section>
       <section>
-        <img src="assets/img-mision.jpg" alt="img"
-        className="my-5 p-5"
-        />
-
+        <img src="assets/img-mision.jpg" alt="img" className="my-5 p-5 cursor-auto"  />
       </section>
     </main>
   );

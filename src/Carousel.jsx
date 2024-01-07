@@ -52,7 +52,7 @@ export default function Carousel() {
   const interval = setInterval(() => slider(), 3000);
 
   return (
-    <main id="main" className="mt-24 z-20">
+    <main id="main" className="mt-24">
       <div className="w-screen h-48 bg-red-500 flex justify-center items-center ">
         <img
           src={arrayCarousel[count].img}

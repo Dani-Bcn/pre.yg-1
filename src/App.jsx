@@ -5,8 +5,8 @@ import Fresado from "./Soluciones/Fresado";
 import Footer from "./Footer";
 import Taladrado from "./Soluciones/Taladrado";
 import Roscado from "./Soluciones/Roscado";
-import Fijacion from "./Soluciones/Fijacion"
-import Sistemas from "./Soluciones/Sistemas"
+import Fijacion from "./Soluciones/Fijacion";
+import Sistemas from "./Soluciones/Sistemas";
 import Gs_catalogos from "./Soluciones/catalogos_pdf/Gs_catalogos";
 import Va_catalogos from "./Soluciones/catalogos_pdf/Va_catalogos";
 import Nw_catalogos from "./Soluciones/catalogos_pdf/Nw_catalogos";
@@ -27,26 +27,19 @@ import Catalogo_general from "./Catalogo_general";
 import Política from "./Legalidad/Política";
 import Videos from "./Videos";
 
-
 function App() {
-  const openMenuResp = () => {
-   
-  };
+  const openMenuResp = () => {};
   const [stateMenuResp, setStateMenuResp] = useState(false);
   const location = useLocation();
   return (
     <main className="flex flex-col">
-        <MenuResponsive
-        stateMenuResp={stateMenuResp}
-        setStateMenuResp={setStateMenuResp}
-      />
       <Tienda />
       <Navbar
         openMenuResp={openMenuResp}
         stateMenuResp={stateMenuResp}
         setStateMenuResp={setStateMenuResp}
       />
-    
+
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
         <Route path="fresado" element={<Fresado />} />
@@ -54,22 +47,22 @@ function App() {
         <Route path="roscado" element={<Roscado />} />
         <Route path="fijacion" element={<Fijacion />} />
         <Route path="sistemas" element={<Sistemas />} />
-        <Route path="fresado/gs_catalogos" element={<Gs_catalogos/>}/>
-        <Route path="fresado/va_catalogos" element={<Va_catalogos/>}/>
-        <Route path="fresado/nw_catalogos" element={<Nw_catalogos/>}/>
-        <Route path="quienes_somos" element={<Quienes_somos/>}/>
-        <Route path="historia" element={<Historia/>}/>
-        <Route path="mision" element={<Mision/>}/>
-        <Route path="contacto" element={<Contacto/>}/>
-        <Route path="yg-1-world" element={<YG_world/>}/>
-        <Route path="equipo" element={<Equipo/>}/>
-        <Route path="noticias" element={<Noticias/>}/>
-        <Route path="noticias/roscado" element={<Roscado_prime_tap/>}/>
-        <Route path="noticias/catalogo" element={<Catalogo_general/>}/>
-        <Route path="/politica" element={<Política/>}/>
-        <Route path="/videos" element={<Videos/>}/>
-       
+        <Route path="fresado/gs_catalogos" element={<Gs_catalogos />} />
+        <Route path="fresado/va_catalogos" element={<Va_catalogos />} />
+        <Route path="fresado/nw_catalogos" element={<Nw_catalogos />} />
+        <Route path="quienes_somos" element={<Quienes_somos />} />
+        <Route path="historia" element={<Historia />} />
+        <Route path="mision" element={<Mision />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route path="yg-1-world" element={<YG_world />} />
+        <Route path="equipo" element={<Equipo />} />
+        <Route path="noticias" element={<Noticias />} />
+        <Route path="noticias/roscado" element={<Roscado_prime_tap />} />
+        <Route path="noticias/catalogo" element={<Catalogo_general />} />
+        <Route path="/politica" element={<Política />} />
+        <Route path="/videos" element={<Videos />} />
       </Routes>
+     
       <Footer />
     </main>
   );
