@@ -9,26 +9,27 @@ export default function MenuResponsive(props) {
   const navigate = useNavigate();
   const [yg, setYg] = useState(false);
   const [soluciones, setSoluciones] = useState(false);
-
-  stateMenuResp
-    ? gsap.to("#mainMenu", {
-        x: "100vw",
-      })
-    : gsap.to("#mainMenu", {
-        x: 0,
-      });
-
-  useEffect(() => {
+ useEffect(() => {
     setSoluciones(false);
     setYg(false);
-  }, [stateMenuResp]);
+   
+  stateMenuResp 
+    ? gsap.to("#mainMenu", {
+        x: "100vw",
+        ease:"power4.out"
+      })
+    : gsap.to("#mainMenu", {
+        x: "0vw",
+      }); 
+
+  }, [stateMenuResp]); 
 
   return (
     <main
       id="mainMenu"
-      className="fixed z-[50] -ml-[100vw] w-screen h-screen bg-red-600"
+    className="z-50 fixed w-screen h-screen  bg-red-600"
     >
-      <section className="mt-20 w-screen  p-5">
+      <section className="mt-20 p-5">
         <h2
           onClick={() => {
             navigate("/"), setStateMenuResp(false);

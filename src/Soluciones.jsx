@@ -26,7 +26,7 @@ export default function Soluciones() {
 
   return (
     <main>
-      <section className="m-auto mt-10  w-full h-full flex flex-col">
+      <section className="m-auto mt-10 md:mt-40  w-full h-full flex flex-col">
         <h2 className=" py-2 px-7 text-3xl">Soluciones</h2>
         <div className="mx-7 w-12 h-[2px]  -mt-2 mb-2 bg-red-700"></div>
         <article className="w-full flex flex-wrap  justify-center">

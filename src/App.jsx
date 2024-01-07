@@ -39,6 +39,11 @@ function App() {
         stateMenuResp={stateMenuResp}
         setStateMenuResp={setStateMenuResp}
       />
+      <MenuResponsive
+        openMenuResp={openMenuResp}
+        stateMenuResp={stateMenuResp}
+        setStateMenuResp={setStateMenuResp}
+      />
 
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
@@ -62,7 +67,7 @@ function App() {
         <Route path="/politica" element={<Política />} />
         <Route path="/videos" element={<Videos />} />
       </Routes>
-     
+
       <Footer />
     </main>
   );

@@ -26,6 +26,9 @@ input{
 #Yg{
     backdrop-filter: blur(30px);
 }
+#mainMenu{
+    margin-left: -100vw;
+}
 
 
 
