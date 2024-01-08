@@ -40,7 +40,7 @@ export default function Soluciones() {
                 className="h-72 flex flex-col justify-start  "
               >
                 <img key={i} className="w-44  p-2 h-52" src={e.url} alt="img" />
-                <p className="ml-2 w-36 font-bold text-2xl">{e.text}</p>
+                <p className="ml-2 w-36 text-2xl">{e.text}</p>
               </div>
             );
           })}

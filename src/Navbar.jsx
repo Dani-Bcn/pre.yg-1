@@ -8,7 +8,7 @@ export default function Navbar(props) {
   const [stateYg, setStateYg] = useState(false);
   const [stateSoluciones, setStateSoluciones] = useState(false);
   const navigate = useNavigate();
-console.log(stateMenuResp)
+  console.log(stateMenuResp);
 
   useEffect(() => {
     if (stateMenuResp) {
@@ -55,33 +55,34 @@ console.log(stateMenuResp)
   }, [stateMenuResp]);
   stateYg
     ? gsap.to("#yg", {
-     
+        marginTop: 40,
         opacity: 1,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 0.3,
+        duration: 0.05,
         ease: "none",
       })
-    : gsap.to("#yg", {     
+    : gsap.to("#yg", {
         opacity: 0,
         clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
-        duration: 0.3,
+        duration: 0.05,
+        ease: "none",
+        marginTop: 20,
+      });
+  stateSoluciones
+    ? gsap.to("#soluciones", {
+        marginTop: 40,
+        opacity: 1,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        duration: 0.2,
+        ease: "none",
+      })
+    : gsap.to("#soluciones", {
+        opacity: 0,
+        marginTop: 20,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
+        duration: 0.2,
         ease: "none",
       });
-      stateSoluciones
-      ? gsap.to("#soluciones", {
-      
-          opacity: 1,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-          duration: 0.3,
-          ease: "none",
-        })
-      : gsap.to("#soluciones", {
-        
-       opacity:0,
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
-          duration: 0.3,
-          ease: "none",
-        });
 
   return (
     <main className="z-[150] fixed w-full h-[55px] md:h-10  mt-10 flex items-center justify-between  bg-white/[0.5] backdrop-blur-md ">
@@ -97,39 +98,70 @@ console.log(stateMenuResp)
         onClick={() => setStateMenuResp(!stateMenuResp)}
         className="landscape:hidden  ml-5 z-50 flex flex-col gap-4 w-20 h-20 items-center justify-center"
       >
-        <div id="stick" className="w-8 h-[3px] bg-red-600 "></div> 
+        <div id="stick" className="w-8 h-[3px] bg-red-600 "></div>
         <div id="stick1" className="w-8 h-[3px] bg-red-600 "></div>
         <div id="stick2" className="w-8 h-[3px] bg-red-600 "></div>
       </section>
       <section className="w-[65vw] portrait:hidden h-20  flex justify-between items-center">
-        <h3 className="cursor-pointer w-40 text-black  hover:text-white font-semibold hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 " onClick={()=>navigate("/")}>Inicio</h3>
+        <h3
+          className="cursor-pointer w-40 text-black  hover:text-white font-semibold hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
+          onClick={() => navigate("/")}
+        >
+          Inicio
+        </h3>
         <nav
           className="z-50 h-10 flex cursor-pointer w-40"
           onMouseOver={() => setStateYg(true)}
           onMouseOut={() => setStateYg(false)}
         >
-          <h3 className="w-40 text-black  hover:text-white hover:bg-red-600 font-semibold bg-white/[0]    flex items-center justify-center transition-all duration-500 ">YG 1</h3>
+          <h3 className="w-40 text-black  hover:text-white hover:bg-red-600 font-semibold bg-white/[0]    flex items-center justify-center transition-all duration-500 ">
+            YG 1
+          </h3>
           <ul
             id="yg"
-            className="absolute p-5 mt-10  rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex  flex-col justify-start"
+            className="absolute p-5 mt-40  rounded-xl opacity-0 text-red-200  bg-slate-950/[0.9]  w-60 h-46 flex  flex-col justify-start  transition-all duration-500"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
-            <li id="yg" onClick={() => navigate("/equipo")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/equipo")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Equipo
             </li>
-            <li id="yg" onClick={() => navigate("/quienes_somos")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/quienes_somos")}
+              className="hover:text-red-500  transition-all duration-50"
+            >
               Quienes Somos
             </li>
-            <li id="yg" onClick={() => navigate("/historia")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/historia")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Historia
             </li>
-            <li id="yg" onClick={() => navigate("/mision")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/mision")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Misión
             </li>
-            <li id="yg" onClick={() => navigate("/yg-1-world")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/yg-1-world")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               YG en el mundo
             </li>
-            <li id="yg" onClick={() => navigate("/contacto")}>
+            <li
+              id="yg"
+              onClick={() => navigate("/contacto")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Contacto
             </li>
           </ul>
@@ -139,30 +171,54 @@ console.log(stateMenuResp)
           onMouseOver={() => setStateSoluciones(true)}
           onMouseOut={() => setStateSoluciones(false)}
         >
-          <h3 className="w-40 text-black  hover:text-white transition-all duration-150 font-semibold hover:bg-red-600    flex items-center justify-center ">Soluciones</h3>
+          <h3 className="w-40 text-black  hover:text-white transition-all duration-150 font-semibold hover:bg-red-600    flex items-center justify-center ">
+            Soluciones
+          </h3>
           <ul
             id="soluciones"
             className="absolute p-5  mt-10 rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex flex-col justify-start"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
-            <li  id="soluciones" onClick={() => navigate("/fresado")}>
+            <li
+              id="soluciones"
+              onClick={() => navigate("/fresado")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Fresado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/Taladrado")}>
+            <li
+              id="soluciones"
+              onClick={() => navigate("/Taladrado")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Taladrado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/roscado")}>
+            <li
+              id="soluciones"
+              onClick={() => navigate("/roscado")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Roscado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/fijacion")}>
+            <li
+              id="soluciones"
+              onClick={() => navigate("/fijacion")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Fijación mecánica
             </li>
-            <li  id="soluciones" onClick={() => navigate("/sistemas")}>
+            <li
+              id="soluciones"
+              onClick={() => navigate("/sistemas")}
+              className="hover:text-red-500  transition-all duration-500"
+            >
               Sistema de herramientas
             </li>
           </ul>
         </nav>
-        <h3 className="cursor-pointer  font-semibold text-black  hover:text-white  hover:bg-red-600 transition-all duration-150 m-6 p-2">Actualidad</h3>
+        <h3 className="cursor-pointer  font-semibold text-black  hover:text-white  hover:bg-red-600 transition-all duration-150 m-6 p-2">
+          Actualidad
+        </h3>
       </section>
     </main>
   );

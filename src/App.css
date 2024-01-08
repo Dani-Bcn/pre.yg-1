@@ -2,34 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-span{
-    font-weight: bold;
-    color: rgb(197, 0, 0);
+span {
+  font-weight: bold;
+  color: rgb(197, 0, 0);
 }
-img{
-    cursor: pointer;
-     
-}
-input{
-    width: 165px;
-    height: 30px;
-    border: 1px solid rgb(148, 203, 255);
-    padding: 10px;
-    
-}
-#mainMenu{
-    margin-left: -100vw;
+img {
+  cursor: pointer;
 }
 
+input {
+  width: 165px;
+  height: 30px;
+  border: 1px solid rgb(148, 203, 255);
+  padding: 10px;
+}
 
-
-
-
-
-
-
+#mainMenu {
+  margin-left: -100vw;
+}
