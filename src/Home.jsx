@@ -11,16 +11,15 @@ import { useState } from "react";
 
 export default function Home() {
 
-  window.scrollTo(0, 0)
   
   const navigate = useNavigate();
   setTimeout(() => {
     scrollUp();
   }, 1);
 
-  const scrollUp = () => {
+ /*  const scrollUp = () => {
     window.scrollTo(0, 0);
-  };
+  }; */
 
   const arraySoluciones = [
     { url: "assets/fresado.jpg", text: "Fresado" },
@@ -44,9 +43,17 @@ export default function Home() {
         onClick={() => {
           navigate("/noticias");
         }}
-        className="text-2xl font-semibold text-white flex justify-center items-center w-[90vw] m-auto my-10 h-12 bg-red-600"
+        className="text-2xl font-semibold text-white flex 
+        justify-center items-center w-[90vw] md:w-72  
+        m-auto my-10 h-12 bg-red-600
+        hover:text-red-600
+        hover:bg-slate-300
+        cursor-pointer
+        transition-all 
+        duration-500
+        "
       >
-        <p>Noticias +</p>
+        <p>+ Actualidad</p>
       </article>
     </main>
   );

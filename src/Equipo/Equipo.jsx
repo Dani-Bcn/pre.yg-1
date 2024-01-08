@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Equipo() {
-  window.scrollTo(0, 0);
+
   const arrayEquipo = [
     {
       img: "/assets/jorge.png",

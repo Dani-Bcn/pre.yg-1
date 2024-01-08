@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function () {
   const navigate = useNavigate();
 
-  window.scrollTo(0, 0)
+ 
   return (
     <main className="mt-24 w-screen p-5">
       <h2 className="text-3xl font-semibold">Actualidad YG-1</h2>

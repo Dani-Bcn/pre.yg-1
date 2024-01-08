@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Historia() {
-  window.scrollTo(0, 0)
+
   const arrayHistory = [
     [
       {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export default function Contacto() {
-  window.scrollTo(0,0)
+
   return (
     <main className="pt-24   ">
       <section className=" w-[90vw] m-auto flex flex-col ">

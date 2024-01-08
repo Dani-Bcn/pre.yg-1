@@ -27,7 +27,7 @@ export default function Soluciones() {
   return (
     <main className="md:mt-0 z-[150]">
       <section className="m-auto mt-10 md:my-40  w-full h-full flex flex-col">
-        <h2 className=" py-2 px-7 md:px-20 text-3xl  md:pt-10 font-bold">Soluciones</h2>
+        <h2 className=" py-2 px-7 md:px-20 text-3xl md:text-5xl  md:pt-10 font-bold">Soluciones</h2>
         <div className="mx-7 w-12 h-[2px] md:mx-20 -mt-2 mb-2 bg-red-700"></div>
         <article className="w-full flex flex-wrap  justify-center">
           {arraySoluciones.map((e, i) => {
