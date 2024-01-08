@@ -145,19 +145,19 @@ console.log(stateMenuResp)
             className="absolute p-5  mt-10 rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex flex-col justify-start"
             style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
           >
-            <li  id="soluciones" onClick={() => navigate("/quienes_somos")}>
+            <li  id="soluciones" onClick={() => navigate("/fresado")}>
               Fresado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/historia")}>
+            <li  id="soluciones" onClick={() => navigate("/Taladrado")}>
               Taladrado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/mision")}>
+            <li  id="soluciones" onClick={() => navigate("/roscado")}>
               Roscado
             </li>
-            <li  id="soluciones" onClick={() => navigate("/yg-1-world")}>
+            <li  id="soluciones" onClick={() => navigate("/fijacion")}>
               Fijación mecánica
             </li>
-            <li  id="soluciones" onClick={() => navigate("/contacto")}>
+            <li  id="soluciones" onClick={() => navigate("/sistemas")}>
               Sistema de herramientas
             </li>
           </ul>
