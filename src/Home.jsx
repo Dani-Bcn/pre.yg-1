@@ -17,9 +17,9 @@ export default function Home() {
     scrollUp();
   }, 1);
 
- /*  const scrollUp = () => {
+  const scrollUp = () => {
     window.scrollTo(0, 0);
-  }; */
+  }; 
 
   const arraySoluciones = [
     { url: "assets/fresado.jpg", text: "Fresado" },
