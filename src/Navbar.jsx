@@ -6,7 +6,7 @@ export default function Navbar(props) {
   const { stateMenuResp } = props;
   const { setStateMenuResp } = props;
   const [stateYg, setStateYg] = useState(false);
-  const [stateSoluciones, setStateSoluciones] = useState(false);
+  const [stateSolutions, setStateSolutions] = useState(false);
   const navigate = useNavigate();
   console.log(stateMenuResp);
 
@@ -53,39 +53,28 @@ export default function Navbar(props) {
       });
     }
   }, [stateMenuResp]);
+
   stateYg
-    ? gsap.to("#yg", {
-        marginTop: 40,
+    ? gsap.to("#yg1", {
+        visibility: "visible",
         opacity: 1,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 0.05,
-        ease: "none",
       })
-    : gsap.to("#yg", {
+    : gsap.to("#yg1", {
+        visibility: "hidden",
         opacity: 0,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
-        duration: 0.05,
-        ease: "none",
-        marginTop: 20,
       });
-  stateSoluciones
-    ? gsap.to("#soluciones", {
-        marginTop: 40,
-        opacity: 1,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        duration: 0.2,
-        ease: "none",
-      })
-    : gsap.to("#soluciones", {
-        opacity: 0,
-        marginTop: 20,
-        clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)",
-        duration: 0.2,
-        ease: "none",
-      });
+      stateSolutions
+      ? gsap.to("#solutions", {
+          visibility: "visible",
+          opacity: 1,
+        })
+      : gsap.to("#solutions", {
+          visibility: "hidden",
+          opacity: 0,
+        });
 
   return (
-    <main className="z-[150] fixed w-full h-[55px] md:h-10  mt-10 flex items-center justify-between  bg-white/[0.5] backdrop-blur-md ">
+    <main className="z-[150] fixed w-full h-[55px] md:h-10  mt-10 flex items-center justify-between  bg-white/[0.9] backdrop-blur-md ">
       <img
         onClick={() => navigate("/")}
         src="assets/logo-red.png"
@@ -102,121 +91,82 @@ export default function Navbar(props) {
         <div id="stick1" className="w-8 h-[3px] bg-red-600 "></div>
         <div id="stick2" className="w-8 h-[3px] bg-red-600 "></div>
       </section>
-      <section className="w-[65vw] portrait:hidden h-20  flex justify-between items-center">
+      <section className="w-[80vw] portrait:hidden h-20  flex justify-around items-center">
         <h3
-          className="cursor-pointer w-40 text-black  hover:text-white font-semibold hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
+          className="cursor-pointer w-40 text-black text-[1.2em]   hover:text-white hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
           onClick={() => navigate("/")}
         >
           Inicio
         </h3>
-        <nav
-          className="z-50 h-10 flex cursor-pointer w-40"
-          onMouseOver={() => setStateYg(true)}
-          onMouseOut={() => setStateYg(false)}
-        >
-          <h3 className="w-40 text-black  hover:text-white hover:bg-red-600 font-semibold bg-white/[0]    flex items-center justify-center transition-all duration-500 ">
-            YG 1
+        <div>
+          <h3
+            className="cursor-pointer w-40 text-black text-[1.2em]   hover:text-white hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
+            onMouseOver={() => setStateYg(true)}
+            onMouseOut={() => setStateYg(false)}
+          >
+            YG-1
           </h3>
           <ul
-            id="yg"
-            className="absolute p-5 mt-40  rounded-xl opacity-0 text-red-200  bg-slate-950/[0.9]  w-60 h-46 flex  flex-col justify-start  transition-all duration-500"
-            style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
+            id="yg1"
+            onMouseOver={() => setStateYg(true)}
+            onMouseOut={() => setStateYg(false)}
+            className="text-black absolute  cursor-pointer rounded-bl-xl rounded-tr-xl w-52 p-3 bg-white flex flex-col gap-2"
           >
-            <li
-              id="yg"
-              onClick={() => navigate("/equipo")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Equipo
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Quienes somos</p>
             </li>
-            <li
-              id="yg"
-              onClick={() => navigate("/quienes_somos")}
-              className="hover:text-red-500  transition-all duration-50"
-            >
-              Quienes Somos
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Historia</p>
             </li>
-            <li
-              id="yg"
-              onClick={() => navigate("/historia")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Historia
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Misión, visión y valores</p>
             </li>
-            <li
-              id="yg"
-              onClick={() => navigate("/mision")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Misión
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">YG-1 en el mundo</p>
             </li>
-            <li
-              id="yg"
-              onClick={() => navigate("/yg-1-world")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              YG en el mundo
-            </li>
-            <li
-              id="yg"
-              onClick={() => navigate("/contacto")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Contacto
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Contacto</p>
             </li>
           </ul>
-        </nav>
-        <nav
-          className="z-50 h-10 flex cursor-pointer w-40"
-          onMouseOver={() => setStateSoluciones(true)}
-          onMouseOut={() => setStateSoluciones(false)}
-        >
-          <h3 className="w-40 text-black  hover:text-white transition-all duration-150 font-semibold hover:bg-red-600    flex items-center justify-center ">
+        </div>
+        <div>
+          <h3
+            className="cursor-pointer w-40 text-black text-[1.2em]   hover:text-white hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
+            onMouseOver={() => setStateSolutions(true)}
+            onMouseOut={() => setStateSolutions(false)}
+          >
             Soluciones
           </h3>
           <ul
-            id="soluciones"
-            className="absolute p-5  mt-10 rounded-xl opacity-0 text-red-200 bg-slate-950/[0.9]  w-60 h-46 flex flex-col justify-start"
-            style={{ clipPath: "polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%)" }}
+            id="solutions"
+            onMouseOver={() => setStateSolutions(true)}
+            onMouseOut={() => setStateSolutions(false)}
+            className="text-black absolute w-40 p-3 cursor-pointer rounded-bl-xl rounded-tr-xl w-52 bg-white flex flex-col gap-2"
           >
-            <li
-              id="soluciones"
-              onClick={() => navigate("/fresado")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Fresado
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Fresado</p>
             </li>
-            <li
-              id="soluciones"
-              onClick={() => navigate("/Taladrado")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Taladrado
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Taladrado</p>
             </li>
-            <li
-              id="soluciones"
-              onClick={() => navigate("/roscado")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Roscado
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Roscado</p>
             </li>
-            <li
-              id="soluciones"
-              onClick={() => navigate("/fijacion")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Fijación mecánica
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Fijación mecánica</p>
             </li>
-            <li
-              id="soluciones"
-              onClick={() => navigate("/sistemas")}
-              className="hover:text-red-500  transition-all duration-500"
-            >
-              Sistema de herramientas
+            <li>
+              <p className="hover:text-white p-2 hover:bg-red-600  rounded-xl transition-all duration-500  ">Sistema de herramients</p>
             </li>
           </ul>
-        </nav>
-        <h3 className="cursor-pointer  font-semibold text-black  hover:text-white  hover:bg-red-600 transition-all duration-150 m-6 p-2">
+        </div>
+        <h3  className="cursor-pointer w-40 text-black text-[1.2em]   hover:text-white hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 ">
+          Equipo
+        </h3>
+        <h3
+          className="cursor-pointer w-40 text-black text-[1.2em]   hover:text-white hover:bg-red-600 h-10 flex items-center justify-center transition-all duration-500 "
+          onClick={() => navigate("/")}
+        >
           Actualidad
         </h3>
       </section>

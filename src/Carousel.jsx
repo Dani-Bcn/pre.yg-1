@@ -52,28 +52,28 @@ export default function Carousel() {
   const interval = setInterval(() => slider(), 3000);
 
   return (
-    <main id="main" className="mt-24 landscape:mt-32 ">
+    <main id="main" className="mt-24 md:mt-[32vh] ">
       <div className="w-screen h-48 bg-red-500 flex justify-center items-center ">
         <img
           src={arrayCarousel[count].img}
           alt=""
-          className="w-screen md:h-96   h-48 object-cover brightness-[50%]"
+          className="w-screen md:h-[70vh] cursor-auto -md:mt-24 h-48  object-cover brightness-[50%]"
         />
-        <h3 className="absolute px-5 text-3xl text-center text-white font-bold ">
+        <h3 className="absolute px-5 md:text-7xl text-3xl text-center text-white font-bold ">
           {arrayCarousel[count].text}
         </h3>
         <button
          onClick={() => {
           setVideo(true), setNumVideo(count);
         }}
-          className=" transition-all portrait:hidden duration-500 text-[1.5em] absolute text-white hover:text-red-600 hover:bg-white flex justify-center w-52 h-10  rounded-[10px] mt-80  bg-red-500/[0.5] backdrop-blur-sm"
+          className=" transition-all portrait:hidden duration-500 text-[1.5em] absolute text-white hover:text-red-600 hover:bg-black flex items-center justify-center text-center w-32 h-32 rounded-[100px] mt-96  bg-red-500/[0.5] backdrop-blur-sm"
         >Ver video</button>
         <button
 
           onClick={() => {
             setVideo(true), setNumVideo(count);
           }}
-          className="absolute landscape:hidden flex justify-center items-center w-16 h-16 rounded-[100px] mt-48 ml-80 bg-slate-50/[0.5] backdrop-blur-sm"
+          className="absolute landscape:hidden flex justify-center items-center w-16 h-16 rounded-[100px] mt-48 ml-10 bg-slate-950/[0.5] backdrop-blur-sm"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
