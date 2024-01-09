@@ -2,10 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Fresado() {
-  window.scrollTo(0, 0)
-  window.scrollTo(0, 0)
+ 
   const navigate = useNavigate()
-  const arrayMilling = [
+  const arrayMilling = [ 
     { img: "assets/gs.png", text: "Aceros de fácil mecanización Rm<850N/mm²",link:"gs_catalogos" },
     {
       img: "assets/vg.png",
@@ -25,22 +24,22 @@ export default function Fresado() {
   ];
  
   return (
-    <main className="  mt-24">
+    <main className="  mt-24 w-screen flex justify-center items-center flex-col">
       <header>
         <img src="assets/header_soluciones.png" alt="" />
       </header>
       <section>
         <h2 className=" mt-7 px-7 text-4xl font-semibold">Fresado</h2>
         <div className="mx-7 w-12 h-[2px] mb-2 bg-red-700"></div>
-        <article className="flex flex-col  w-[90vw]  m-auto rounded-3xl my-10  p-2">
+        <article className="flex flex-col  justify-around  w-[90vw] md:w-[80vw] md:flex-row  md:flex-wrap m-auto rounded-3xl my-10  p-2">
           {arrayMilling.map((e, i) => {
             return (
               <div
                 key={i}
-                className="w-full h-40  my-2 text-white  hover:bg-gray-800 bg-gray-400 rounded-2xl flex "
+                className="w-full h-40  md:w-96    my-2 text-white  hover:bg-gray-800 bg-gray-400 rounded-2xl flex "
               >
                 <img src={e.img} alt="img" className="w-20 h-20 px m-3  " />
-                <div className="flex flex-col w-full h-full ">
+                <div className="flex flex-col w-full h-full  ">
                   <p className=" w-62 p-3 text-start">{e.text}</p>
                   <div className="flex py-4 h-40  items-end gap-5 w-full">
                     <button 
@@ -50,7 +49,7 @@ export default function Fresado() {
                         <p>Catálogos</p>
                      
                     </button>
-                    <button className="w-20 h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
+                    <button className="w-20  h-5 bg-red-500 text-center p-5 rounded-md flex justify-center items-center">
                       <a
                         target="_blank"
                         href="https://www.tiendayg1.es/tienda/seccion/0B"

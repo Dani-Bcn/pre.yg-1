@@ -150,7 +150,7 @@ export default function Navbar(props) {
             onMouseOut={() => setStateSolutions(false)}
             className="text-black absolute w-40 p-3 cursor-pointer rounded-bl-xl rounded-tr-xl w-52 bg-slate-200 flex flex-col gap-2"
           >
-            <li>
+            <li onClick={()=> navigate("/fresado")}>
               <p className="hover:text-white p-2 hover:bg-red-600  rounded-md transition-all duration-500  ">
                 Fresado
               </p>
